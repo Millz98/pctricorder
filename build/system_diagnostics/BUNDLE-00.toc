@@ -1,0 +1,3 @@
+([('system_diagnostics',
+   '/Users/davemills/Documents/Projects/diagnostics/dist/system_diagnostics',
+   'EXECUTABLE')],)
