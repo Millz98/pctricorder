@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-10-d 00:52:59 - INFO: CPU Usage: 1.6%
 2023-10-d 00:52:59 - INFO: Memory Usage: 14.1%
 2023-10-d 00:52:59 - INFO: CPU Temperature: None�C
@@ -2449,3 +2450,1017 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-d 02:16:49 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\808B'
 2023-10-d 02:16:49 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\ROMS\atetrisb.zip
 2023-10-d 02:16:49 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\808B'
+=======
+2023-10-03 13:40:24 - INFO: CPU Usage: 5.3%
+2023-10-03 13:40:24 - INFO: Memory Usage: 76.5%
+2023-10-03 13:40:24 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:40:24 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:40:24 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:40:24 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 13:40:28 - INFO: CPU Usage: 5.6%
+2023-10-03 13:40:28 - INFO: Memory Usage: 76.0%
+2023-10-03 13:40:28 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:40:28 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:40:28 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:40:28 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 13:40:29 - INFO: CPU Usage: 6.2%
+2023-10-03 13:40:29 - INFO: Memory Usage: 75.8%
+2023-10-03 13:40:29 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:40:29 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:40:30 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:40:30 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 13:43:36 - INFO: CPU Usage: 11.8%
+2023-10-03 13:43:36 - INFO: Memory Usage: 76.0%
+2023-10-03 13:43:36 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:43:36 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:43:36 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:43:36 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 13:43:40 - INFO: CPU Usage: 6.1%
+2023-10-03 13:43:40 - INFO: Memory Usage: 76.1%
+2023-10-03 13:43:40 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:43:40 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:43:40 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:43:40 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 13:54:59 - INFO: CPU Usage: 6.0%
+2023-10-03 13:54:59 - INFO: Memory Usage: 75.9%
+2023-10-03 13:54:59 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:54:59 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:54:59 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:54:59 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 13:55:04 - INFO: CPU Usage: 7.6%
+2023-10-03 13:55:04 - INFO: Memory Usage: 75.4%
+2023-10-03 13:55:04 - INFO: CPU Temperature: 0.0°C
+2023-10-03 13:55:04 - INFO: Total RAM: 8.00 GB
+2023-10-03 13:55:04 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 13:55:04 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 18:26:47 - INFO: CPU Usage: 0.8%
+2023-10-03 18:26:47 - INFO: Memory Usage: 11.7%
+2023-10-03 18:26:47 - ERROR: Error checking temperature: No module named 'wmi'
+2023-10-03 18:26:47 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:26:47 - ERROR: Error getting GPU information: No module named 'wmi'
+2023-10-03 18:26:47 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:26:57 - INFO: CPU Usage: 1.5%
+2023-10-03 18:26:57 - INFO: Memory Usage: 11.7%
+2023-10-03 18:26:57 - ERROR: Error checking temperature: No module named 'wmi'
+2023-10-03 18:26:57 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:26:57 - ERROR: Error getting GPU information: No module named 'wmi'
+2023-10-03 18:26:57 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:28:34 - INFO: CPU Usage: 0.5%
+2023-10-03 18:28:34 - INFO: Memory Usage: 11.6%
+2023-10-03 18:28:35 - INFO: CPU Temperature: None�C
+2023-10-03 18:28:35 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:28:35 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:28:35 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:31:18 - INFO: CPU Usage: 0.0%
+2023-10-03 18:31:18 - INFO: Memory Usage: 11.7%
+2023-10-03 18:31:18 - INFO: CPU Temperature: None�C
+2023-10-03 18:31:18 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:31:18 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:31:18 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:31:27 - INFO: CPU Usage: 0.1%
+2023-10-03 18:31:27 - INFO: Memory Usage: 11.7%
+2023-10-03 18:31:27 - INFO: CPU Temperature: None�C
+2023-10-03 18:31:27 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:31:27 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:31:27 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:34:54 - INFO: CPU Usage: 1.2%
+2023-10-03 18:34:54 - INFO: Memory Usage: 12.5%
+2023-10-03 18:34:54 - INFO: CPU Temperature: None�C
+2023-10-03 18:34:54 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:34:54 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:34:54 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:39:41 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:39:42 - INFO: CPU Usage: 0.0%
+2023-10-03 18:39:42 - INFO: Memory Usage: 12.4%
+2023-10-03 18:39:42 - INFO: CPU Temperature: None�C
+2023-10-03 18:39:42 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:39:42 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:39:42 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:39:48 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:39:49 - INFO: CPU Usage: 0.9%
+2023-10-03 18:39:49 - INFO: Memory Usage: 12.5%
+2023-10-03 18:39:49 - INFO: CPU Temperature: None�C
+2023-10-03 18:39:49 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:39:49 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:39:49 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:44:51 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:44:52 - INFO: CPU Usage: 0.5%
+2023-10-03 18:44:52 - INFO: Memory Usage: 12.5%
+2023-10-03 18:44:52 - INFO: CPU Temperature: None�C
+2023-10-03 18:44:52 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:44:52 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:44:52 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:44:54 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:44:55 - INFO: CPU Usage: 0.5%
+2023-10-03 18:44:55 - INFO: Memory Usage: 12.5%
+2023-10-03 18:44:55 - INFO: CPU Temperature: None�C
+2023-10-03 18:44:55 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:44:55 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:44:55 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:47:32 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:47:33 - INFO: CPU Usage: 0.3%
+2023-10-03 18:47:33 - INFO: Memory Usage: 12.5%
+2023-10-03 18:47:33 - INFO: CPU Temperature: None�C
+2023-10-03 18:47:33 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:47:33 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:47:33 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:48:27 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:48:28 - INFO: CPU Usage: 0.0%
+2023-10-03 18:48:28 - INFO: Memory Usage: 12.5%
+2023-10-03 18:48:28 - INFO: CPU Temperature: None�C
+2023-10-03 18:48:28 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:48:28 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:48:28 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:48:37 - ERROR: Problem detected in file: C:\DumpStack.log
+2023-10-03 18:48:37 - ERROR: Error: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+2023-10-03 18:48:37 - ERROR: Problem detected in file: C:\DumpStack.log.tmp
+2023-10-03 18:48:37 - ERROR: Error: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+2023-10-03 18:48:37 - ERROR: Problem detected in file: C:\hiberfil.sys
+2023-10-03 18:48:37 - ERROR: Error: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+2023-10-03 18:48:37 - ERROR: Problem detected in file: C:\pagefile.sys
+2023-10-03 18:48:37 - ERROR: Error: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+2023-10-03 18:48:37 - ERROR: Problem detected in file: C:\swapfile.sys
+2023-10-03 18:48:37 - ERROR: Error: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+2023-10-03 18:49:25 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:49:26 - INFO: CPU Usage: 0.4%
+2023-10-03 18:49:26 - INFO: Memory Usage: 12.1%
+2023-10-03 18:49:26 - INFO: CPU Temperature: None�C
+2023-10-03 18:49:26 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:49:26 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:49:26 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:50:51 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:50:52 - INFO: CPU Usage: 0.3%
+2023-10-03 18:50:52 - INFO: Memory Usage: 12.3%
+2023-10-03 18:50:52 - INFO: CPU Temperature: None�C
+2023-10-03 18:50:52 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:50:52 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:50:52 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:51:20 - INFO: No problems detected in files.
+2023-10-03 18:51:21 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:51:22 - INFO: CPU Usage: 0.0%
+2023-10-03 18:51:22 - INFO: Memory Usage: 12.1%
+2023-10-03 18:51:22 - INFO: CPU Temperature: None�C
+2023-10-03 18:51:22 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:51:22 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:51:22 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:56:05 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:56:06 - INFO: CPU Usage: 0.5%
+2023-10-03 18:56:06 - INFO: Memory Usage: 12.0%
+2023-10-03 18:56:06 - INFO: CPU Temperature: None�C
+2023-10-03 18:56:06 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:56:06 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:56:06 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:56:13 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:56:14 - INFO: CPU Usage: 1.1%
+2023-10-03 18:56:14 - INFO: Memory Usage: 12.0%
+2023-10-03 18:56:14 - INFO: CPU Temperature: None�C
+2023-10-03 18:56:14 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:56:14 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:56:14 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:56:24 - INFO: No problems detected in files.
+2023-10-03 18:56:25 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:56:26 - INFO: CPU Usage: 0.6%
+2023-10-03 18:56:26 - INFO: Memory Usage: 12.0%
+2023-10-03 18:56:26 - INFO: CPU Temperature: None�C
+2023-10-03 18:56:26 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:56:26 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:56:26 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 18:57:02 - INFO: No problems detected in files.
+2023-10-03 18:57:03 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 18:57:04 - INFO: CPU Usage: 0.7%
+2023-10-03 18:57:04 - INFO: Memory Usage: 12.0%
+2023-10-03 18:57:04 - INFO: CPU Temperature: None�C
+2023-10-03 18:57:04 - INFO: Total RAM: 127.92 GB
+2023-10-03 18:57:04 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 18:57:04 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 19:04:53 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 19:04:54 - INFO: CPU Usage: 0.5%
+2023-10-03 19:04:54 - INFO: Memory Usage: 12.2%
+2023-10-03 19:04:54 - INFO: CPU Temperature: None�C
+2023-10-03 19:04:54 - INFO: Total RAM: 127.92 GB
+2023-10-03 19:04:54 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 19:04:54 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 19:06:37 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 19:06:38 - INFO: CPU Usage: 1.0%
+2023-10-03 19:06:38 - INFO: Memory Usage: 12.0%
+2023-10-03 19:06:39 - INFO: CPU Temperature: None�C
+2023-10-03 19:06:39 - INFO: Total RAM: 127.92 GB
+2023-10-03 19:06:39 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 19:06:39 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 19:07:38 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 19:07:39 - INFO: CPU Usage: 1.7%
+2023-10-03 19:07:39 - INFO: Memory Usage: 12.0%
+2023-10-03 19:07:39 - INFO: CPU Temperature: None�C
+2023-10-03 19:07:39 - INFO: Total RAM: 127.92 GB
+2023-10-03 19:07:39 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 19:07:39 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 19:20:13 - ERROR: Problem detected in file: F:\Adobe\Premiere Pro\7.0\s2l8.
+2023-10-03 19:20:13 - ERROR: Error: [Errno 2] No such file or directory: 'F:\\Adobe\\Premiere Pro\\7.0\\s2l8.'
+2023-10-03 19:20:13 - ERROR: Problem detected in file: F:\Adobe\Premiere Pro\7.0\s620.
+2023-10-03 19:20:13 - ERROR: Error: [Errno 2] No such file or directory: 'F:\\Adobe\\Premiere Pro\\7.0\\s620.'
+2023-10-03 19:20:30 - ERROR: Problem detected in file: F:\Adobe\Premiere Pro\7.0\s7vo.
+2023-10-03 19:20:30 - ERROR: Error: [Errno 2] No such file or directory: 'F:\\Adobe\\Premiere Pro\\7.0\\s7vo.'
+2023-10-03 19:20:30 - ERROR: Problem detected in file: F:\Adobe\Premiere Pro\7.0\s1h4.
+2023-10-03 19:20:30 - ERROR: Error: [Errno 2] No such file or directory: 'F:\\Adobe\\Premiere Pro\\7.0\\s1h4.'
+2023-10-03 19:38:46 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 19:38:47 - INFO: CPU Usage: 0.4%
+2023-10-03 19:38:47 - INFO: Memory Usage: 12.7%
+2023-10-03 19:38:47 - INFO: CPU Temperature: None�C
+2023-10-03 19:38:47 - INFO: Total RAM: 127.92 GB
+2023-10-03 19:38:47 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 19:38:47 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 19:38:51 - ERROR: Error reading file: C:\DumpStack.log
+2023-10-03 19:38:51 - ERROR: Error: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+2023-10-03 19:38:51 - ERROR: Error reading file: C:\DumpStack.log.tmp
+2023-10-03 19:38:51 - ERROR: Error: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+2023-10-03 19:38:51 - ERROR: Error reading file: C:\hiberfil.sys
+2023-10-03 19:38:51 - ERROR: Error: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+2023-10-03 19:38:51 - ERROR: Error reading file: C:\pagefile.sys
+2023-10-03 19:38:51 - ERROR: Error: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+2023-10-03 19:38:51 - ERROR: Error reading file: C:\swapfile.sys
+2023-10-03 19:38:51 - ERROR: Error: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+2023-10-03 19:41:11 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 19:41:12 - INFO: CPU Usage: 0.5%
+2023-10-03 19:41:12 - INFO: Memory Usage: 12.6%
+2023-10-03 19:41:12 - INFO: CPU Temperature: None�C
+2023-10-03 19:41:12 - INFO: Total RAM: 127.92 GB
+2023-10-03 19:41:12 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 19:41:12 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 19:42:14 - ERROR: Error reading file: D:\DLS\Star_Trek_Voyager_Elite_Force_Win_Files_EN.7z
+2023-10-03 19:42:14 - ERROR: Error: [Errno 22] Invalid argument: 'D:\\DLS\\Star_Trek_Voyager_Elite_Force_Win_Files_EN.7z'
+2023-10-03 20:14:07 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 20:14:08 - INFO: CPU Usage: 0.2%
+2023-10-03 20:14:08 - INFO: Memory Usage: 13.0%
+2023-10-03 20:14:08 - INFO: CPU Temperature: None�C
+2023-10-03 20:14:08 - INFO: Total RAM: 127.92 GB
+2023-10-03 20:14:08 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 20:14:08 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 20:14:19 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 20:14:20 - INFO: CPU Usage: 1.1%
+2023-10-03 20:14:20 - INFO: Memory Usage: 13.0%
+2023-10-03 20:14:20 - INFO: CPU Temperature: None�C
+2023-10-03 20:14:20 - INFO: Total RAM: 127.92 GB
+2023-10-03 20:14:20 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 20:14:20 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 20:17:48 - INFO: Windows Version: Windows 10 Pro
+2023-10-03 20:17:49 - INFO: CPU Usage: 0.2%
+2023-10-03 20:17:49 - INFO: Memory Usage: 13.1%
+2023-10-03 20:17:49 - INFO: CPU Temperature: None�C
+2023-10-03 20:17:49 - INFO: Total RAM: 127.92 GB
+2023-10-03 20:17:49 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-03 20:17:49 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-03 20:59:29 - INFO: CPU Usage: 2.9%
+2023-10-03 20:59:29 - INFO: Memory Usage: 75.0%
+2023-10-03 20:59:29 - INFO: CPU Temperature: 0.0°C
+2023-10-03 20:59:29 - INFO: Total RAM: 8.00 GB
+2023-10-03 20:59:29 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 20:59:29 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 20:59:45 - INFO: CPU Usage: 2.1%
+2023-10-03 20:59:45 - INFO: Memory Usage: 75.3%
+2023-10-03 20:59:45 - INFO: CPU Temperature: 0.0°C
+2023-10-03 20:59:45 - INFO: Total RAM: 8.00 GB
+2023-10-03 20:59:46 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 20:59:46 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 20:59:52 - INFO: CPU Usage: 2.7%
+2023-10-03 20:59:52 - INFO: Memory Usage: 75.1%
+2023-10-03 20:59:52 - INFO: CPU Temperature: 0.0°C
+2023-10-03 20:59:52 - INFO: Total RAM: 8.00 GB
+2023-10-03 20:59:52 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 20:59:52 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-03 21:00:00 - INFO: CPU Usage: 2.5%
+2023-10-03 21:00:00 - INFO: Memory Usage: 75.2%
+2023-10-03 21:00:00 - INFO: CPU Temperature: 0.0°C
+2023-10-03 21:00:00 - INFO: Total RAM: 8.00 GB
+2023-10-03 21:00:01 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-03 21:00:01 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 12:27:53 - INFO: CPU Usage: 3.0%
+2023-10-04 12:27:53 - INFO: Memory Usage: 73.0%
+2023-10-04 12:27:53 - INFO: CPU Temperature: 0.0°C
+2023-10-04 12:27:53 - INFO: Total RAM: 8.00 GB
+2023-10-04 12:27:54 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 12:27:54 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 12:29:57 - INFO: CPU Usage: 2.4%
+2023-10-04 12:29:57 - INFO: Memory Usage: 71.2%
+2023-10-04 12:29:57 - INFO: CPU Temperature: 0.0°C
+2023-10-04 12:29:57 - INFO: Total RAM: 8.00 GB
+2023-10-04 12:29:57 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 12:29:57 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 12:36:34 - INFO: CPU Usage: 2.7%
+2023-10-04 12:36:34 - INFO: Memory Usage: 71.8%
+2023-10-04 12:36:34 - INFO: CPU Temperature: 0.0°C
+2023-10-04 12:36:34 - INFO: Total RAM: 8.00 GB
+2023-10-04 12:36:34 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 12:36:34 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 12:36:41 - INFO: CPU Usage: 2.1%
+2023-10-04 12:36:41 - INFO: Memory Usage: 71.4%
+2023-10-04 12:36:41 - INFO: CPU Temperature: 0.0°C
+2023-10-04 12:36:41 - INFO: Total RAM: 8.00 GB
+2023-10-04 12:36:41 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 12:36:41 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 12:36:50 - INFO: CPU Usage: 2.1%
+2023-10-04 12:36:50 - INFO: Memory Usage: 71.3%
+2023-10-04 12:36:50 - INFO: CPU Temperature: 0.0°C
+2023-10-04 12:36:50 - INFO: Total RAM: 8.00 GB
+2023-10-04 12:36:50 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 12:36:50 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 12:36:55 - INFO: CPU Usage: 2.5%
+2023-10-04 12:36:55 - INFO: Memory Usage: 71.2%
+2023-10-04 12:36:55 - INFO: CPU Temperature: 0.0°C
+2023-10-04 12:36:55 - INFO: Total RAM: 8.00 GB
+2023-10-04 12:36:56 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 12:36:56 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 18:09:50 - INFO: CPU Usage: 2.4%
+2023-10-04 18:09:50 - INFO: Memory Usage: 70.3%
+2023-10-04 18:09:50 - INFO: CPU Temperature: 0.0°C
+2023-10-04 18:09:50 - INFO: Total RAM: 8.00 GB
+2023-10-04 18:09:50 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 18:09:50 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-04 18:09:56 - INFO: CPU Usage: 1.6%
+2023-10-04 18:09:56 - INFO: Memory Usage: 70.3%
+2023-10-04 18:09:56 - INFO: CPU Temperature: 0.0°C
+2023-10-04 18:09:56 - INFO: Total RAM: 8.00 GB
+2023-10-04 18:09:56 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-04 18:09:56 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-28 21:17:19 - INFO: CPU Usage: 4.7%
+2023-10-28 21:17:19 - INFO: Memory Usage: 69.4%
+2023-10-28 21:17:19 - INFO: CPU Temperature: 0.0°C
+2023-10-28 21:17:19 - INFO: Total RAM: 8.00 GB
+2023-10-28 21:17:19 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-28 21:17:19 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-28 21:17:42 - INFO: CPU Usage: 2.4%
+2023-10-28 21:17:42 - INFO: Memory Usage: 69.2%
+2023-10-28 21:17:42 - INFO: CPU Temperature: 0.0°C
+2023-10-28 21:17:42 - INFO: Total RAM: 8.00 GB
+2023-10-28 21:17:42 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-28 21:17:42 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:28:49 - INFO: CPU Usage: 4.2%
+2023-10-30 22:28:49 - INFO: Memory Usage: 71.2%
+2023-10-30 22:28:49 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:28:49 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:28:50 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:28:50 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:30:36 - INFO: CPU Usage: 2.2%
+2023-10-30 22:30:36 - INFO: Memory Usage: 70.9%
+2023-10-30 22:30:36 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:30:36 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:30:37 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:30:37 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:31:02 - INFO: CPU Usage: 1.6%
+2023-10-30 22:31:02 - INFO: Memory Usage: 71.0%
+2023-10-30 22:31:02 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:31:02 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:31:02 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:31:02 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:32:27 - INFO: CPU Usage: 2.0%
+2023-10-30 22:32:27 - INFO: Memory Usage: 71.4%
+2023-10-30 22:32:27 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:32:27 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:32:27 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:32:27 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:33:25 - INFO: CPU Usage: 2.7%
+2023-10-30 22:33:25 - INFO: Memory Usage: 71.1%
+2023-10-30 22:33:25 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:33:25 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:33:25 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:33:25 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:34:26 - INFO: CPU Usage: 4.6%
+2023-10-30 22:34:26 - INFO: Memory Usage: 70.9%
+2023-10-30 22:34:26 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:34:26 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:34:26 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:34:26 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:35:06 - INFO: CPU Usage: 11.8%
+2023-10-30 22:35:06 - INFO: Memory Usage: 71.0%
+2023-10-30 22:35:06 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:35:06 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:35:07 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:35:07 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:36:46 - INFO: CPU Usage: 11.0%
+2023-10-30 22:36:46 - INFO: Memory Usage: 71.2%
+2023-10-30 22:36:46 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:36:46 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:36:46 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:36:46 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:36:51 - INFO: CPU Usage: 2.1%
+2023-10-30 22:36:51 - INFO: Memory Usage: 71.0%
+2023-10-30 22:36:51 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:36:51 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:36:52 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:36:52 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:40:43 - INFO: CPU Usage: 2.9%
+2023-10-d 22:40:43 - INFO: Memory Usage: 70.9%
+2023-10-d 22:40:43 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:40:43 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:40:43 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:40:43 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:44:08 - INFO: CPU Usage: 2.0%
+2023-10-d 22:44:08 - INFO: Memory Usage: 70.4%
+2023-10-d 22:44:08 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:44:08 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:44:08 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:44:08 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:44:13 - INFO: CPU Usage: 2.9%
+2023-10-d 22:44:13 - INFO: Memory Usage: 70.8%
+2023-10-d 22:44:13 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:44:13 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:44:13 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:44:13 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:46:14 - INFO: CPU Usage: 1.6%
+2023-10-d 22:46:14 - INFO: Memory Usage: 70.5%
+2023-10-d 22:46:14 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:46:14 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:46:14 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:46:14 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:46:17 - INFO: CPU Usage: 2.6%
+2023-10-d 22:46:17 - INFO: Memory Usage: 70.4%
+2023-10-d 22:46:17 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:46:17 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:46:18 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:46:18 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:47:08 - INFO: CPU Usage: 1.7%
+2023-10-d 22:47:08 - INFO: Memory Usage: 70.4%
+2023-10-d 22:47:08 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:47:08 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:47:09 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:47:09 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 22:47:16 - INFO: CPU Usage: 1.6%
+2023-10-d 22:47:16 - INFO: Memory Usage: 70.3%
+2023-10-d 22:47:16 - INFO: CPU Temperature: 0.0°C
+2023-10-d 22:47:16 - INFO: Total RAM: 8.00 GB
+2023-10-d 22:47:16 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 22:47:16 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:53:42 - INFO: CPU Usage: 2.5%
+2023-10-30 22:53:42 - INFO: Memory Usage: 71.0%
+2023-10-30 22:53:42 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:53:42 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:53:43 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:53:43 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:53:49 - INFO: CPU Usage: 2.1%
+2023-10-30 22:53:49 - INFO: Memory Usage: 70.4%
+2023-10-30 22:53:49 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:53:49 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:53:49 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:53:49 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:55:34 - INFO: CPU Usage: 2.9%
+2023-10-30 22:55:34 - INFO: Memory Usage: 71.3%
+2023-10-30 22:55:34 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:55:34 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:55:34 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:55:34 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:55:38 - INFO: No problems detected in files.
+2023-10-30 22:55:40 - INFO: CPU Usage: 2.7%
+2023-10-30 22:55:40 - INFO: Memory Usage: 70.7%
+2023-10-30 22:55:40 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:55:40 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:55:41 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:55:41 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 22:55:51 - INFO: No problems detected in files.
+2023-10-30 22:55:54 - INFO: CPU Usage: 1.5%
+2023-10-30 22:55:54 - INFO: Memory Usage: 70.7%
+2023-10-30 22:55:54 - INFO: CPU Temperature: 0.0°C
+2023-10-30 22:55:54 - INFO: Total RAM: 8.00 GB
+2023-10-30 22:55:54 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 22:55:54 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 23:01:22 - INFO: CPU Usage: 5.0%
+2023-10-30 23:01:22 - INFO: Memory Usage: 71.1%
+2023-10-30 23:01:22 - INFO: CPU Temperature: 0.0°C
+2023-10-30 23:01:22 - INFO: Total RAM: 8.00 GB
+2023-10-30 23:01:22 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 23:01:22 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 23:01:29 - INFO: Scanned drives: /dev/disk2s1
+2023-10-30 23:01:29 - INFO: No problems detected in files.
+2023-10-30 23:01:31 - INFO: CPU Usage: 1.9%
+2023-10-30 23:01:31 - INFO: Memory Usage: 71.3%
+2023-10-30 23:01:31 - INFO: CPU Temperature: 0.0°C
+2023-10-30 23:01:31 - INFO: Total RAM: 8.00 GB
+2023-10-30 23:01:31 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 23:01:31 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 23:05:33 - INFO: CPU Usage: 0.2%
+2023-10-30 23:05:33 - INFO: Memory Usage: 10.2%
+2023-10-30 23:05:33 - INFO: CPU Temperature: None�C
+2023-10-30 23:05:33 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:05:33 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:05:33 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:06:18 - INFO: CPU Usage: 0.6%
+2023-10-30 23:06:19 - INFO: Memory Usage: 10.2%
+2023-10-30 23:06:19 - INFO: CPU Temperature: None�C
+2023-10-30 23:06:19 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:06:19 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:06:19 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:06:25 - ERROR: Problem detected in file: C:\$Recycle.Bin\S-1-5-21-1152465577-2415030020-1968446922-1001\$I97JGE1.7z
+2023-10-30 23:06:25 - ERROR: Error: not a 7z file
+2023-10-30 23:06:32 - ERROR: Problem detected in file: C:\Program Files\Google\Chrome\Application\118.0.5993.118\Installer\chrome.7z
+2023-10-30 23:06:32 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:06:32 - ERROR: Problem detected in file: C:\Program Files\Guild Wars 2\bin64\cef\libcef.zip
+2023-10-30 23:06:32 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'C:\\Program Files\\Guild Wars 2\\bin64\\cef\\libcef.zip']' returned non-zero exit status 2
+2023-10-30 23:06:34 - ERROR: Problem detected in file: C:\Program Files\NVIDIA Corporation\NvBackend\ApplicationOntology.7z
+2023-10-30 23:06:34 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:06:49 - ERROR: Problem detected in file: C:\Program Files (x86)\OpenOffice 4\share\config\images_brand.zip
+2023-10-30 23:06:49 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'C:\\Program Files (x86)\\OpenOffice 4\\share\\config\\images_brand.zip']' returned non-zero exit status 2
+2023-10-30 23:08:56 - ERROR: Problem detected in file: C:\Users\Millz98\AppData\Local\Packages\AppUp.IntelGraphicsExperience_8j3eq9eme6ctt\LocalState\Promotions\IntelMarketingMaterial.zip
+2023-10-30 23:08:56 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'C:\\Users\\Millz98\\AppData\\Local\\Packages\\AppUp.IntelGraphicsExperience_8j3eq9eme6ctt\\LocalState\\Promotions\\IntelMarketingMaterial.zip']' returned non-zero exit status 2
+2023-10-30 23:13:45 - INFO: CPU Usage: 0.3%
+2023-10-30 23:13:45 - INFO: Memory Usage: 11.8%
+2023-10-30 23:13:45 - INFO: CPU Temperature: None�C
+2023-10-30 23:13:45 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:13:45 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:13:45 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:14:00 - INFO: CPU Usage: 0.7%
+2023-10-30 23:14:00 - INFO: Memory Usage: 11.8%
+2023-10-30 23:14:00 - INFO: CPU Temperature: None�C
+2023-10-30 23:14:00 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:14:00 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:14:00 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:14:07 - ERROR: Problem detected in file: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IKJKNQK.zip
+2023-10-30 23:14:07 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IKJKNQK.zip']' returned non-zero exit status 2
+2023-10-30 23:14:07 - ERROR: Problem detected in file: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IMCMXG4.zip
+2023-10-30 23:14:07 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IMCMXG4.zip']' returned non-zero exit status 2
+2023-10-30 23:22:10 - INFO: CPU Usage: 1.0%
+2023-10-30 23:22:10 - INFO: Memory Usage: 11.8%
+2023-10-30 23:22:10 - INFO: CPU Temperature: None�C
+2023-10-30 23:22:10 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:22:10 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:22:10 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:22:21 - INFO: CPU Usage: 0.4%
+2023-10-30 23:22:21 - INFO: Memory Usage: 11.8%
+2023-10-30 23:22:21 - INFO: CPU Temperature: None�C
+2023-10-30 23:22:21 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:22:21 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:22:21 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:22:32 - INFO: Scanned drives: E:\
+2023-10-30 23:22:32 - INFO: No problems detected in files.
+2023-10-30 23:22:34 - INFO: CPU Usage: 0.9%
+2023-10-30 23:22:34 - INFO: Memory Usage: 11.8%
+2023-10-30 23:22:34 - INFO: CPU Temperature: None�C
+2023-10-30 23:22:34 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:22:34 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:22:34 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:27:24 - ERROR: Problem detected in file: F:\Call_of_Chernobyl_1_4_12.7z
+2023-10-30 23:27:24 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:28:10 - ERROR: Problem detected in file: F:\DoctorWho_AdventureGames.7z
+2023-10-30 23:28:10 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+>>>>>>> 681655bb668507d7ab60bd6998e15157307412ad
