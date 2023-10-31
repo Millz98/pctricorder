@@ -42,17 +42,11 @@ def start_scan(drives_to_scan):
     # Log that the scan is completed
     logging.info("Scan completed for all selected drives.")
 
-    # Log the scan results
-    if not problem_files:
-        logging.info("No problems detected in files.")
-    else:
-        logging.info(f"Problems found in {len(problem_files)} files.")
+    # Log the scan results for problem files
+    if problem_files:
+        logging.info("Problems found in files:")
         for problem_file in problem_files:
             logging.info(problem_file)
-    if scanned_files:
-        logging.info("Scanned files:")
-        for scanned_file in scanned_files:
-            logging.info(scanned_file)
 
 # Function to scan a single drive
 def scan_drive(drive, problem_files, scanned_files):
