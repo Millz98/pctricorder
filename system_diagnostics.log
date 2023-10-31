@@ -980,3 +980,33 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-30 23:14:07 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IKJKNQK.zip']' returned non-zero exit status 2
 2023-10-30 23:14:07 - ERROR: Problem detected in file: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IMCMXG4.zip
 2023-10-30 23:14:07 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IMCMXG4.zip']' returned non-zero exit status 2
+2023-10-30 23:22:10 - INFO: CPU Usage: 1.0%
+2023-10-30 23:22:10 - INFO: Memory Usage: 11.8%
+2023-10-30 23:22:10 - INFO: CPU Temperature: None°C
+2023-10-30 23:22:10 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:22:10 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:22:10 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:22:21 - INFO: CPU Usage: 0.4%
+2023-10-30 23:22:21 - INFO: Memory Usage: 11.8%
+2023-10-30 23:22:21 - INFO: CPU Temperature: None°C
+2023-10-30 23:22:21 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:22:21 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:22:21 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:22:32 - INFO: Scanned drives: E:\
+2023-10-30 23:22:32 - INFO: No problems detected in files.
+2023-10-30 23:22:34 - INFO: CPU Usage: 0.9%
+2023-10-30 23:22:34 - INFO: Memory Usage: 11.8%
+2023-10-30 23:22:34 - INFO: CPU Temperature: None°C
+2023-10-30 23:22:34 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:22:34 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:22:34 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:27:24 - ERROR: Problem detected in file: F:\Call_of_Chernobyl_1_4_12.7z
+2023-10-30 23:27:24 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:28:10 - ERROR: Problem detected in file: F:\DoctorWho_AdventureGames.7z
+2023-10-30 23:28:10 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')

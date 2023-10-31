@@ -175,8 +175,10 @@ def memory_map_file(file_path):
 def scan_files(drives_to_scan, file_extensions_to_scan):
     problem_files = []
     scanned_drives = []  # Store the scanned drives
+
     for drive in tqdm(drives_to_scan, desc="Scanning Drives", unit="drive"):
         scanned_drives.append(drive)  # Record the drive being scanned
+
         for root, dirs, files in os.walk(drive):
             for file in tqdm(files, desc="Scanning Files", unit="file", leave=False):
                 file_path = os.path.join(root, file)
@@ -187,33 +189,43 @@ def scan_files(drives_to_scan, file_extensions_to_scan):
                         temp_dir = "temp_extracted"
                         os.makedirs(temp_dir, exist_ok=True)
 
-                        if file_path.endswith('.zip'):
-                            patoolib.extract_archive(file_path, outdir=temp_dir)
-                        elif file_path.endswith('.rar'):
-                            patoolib.extract_archive(file_path, outdir=temp_dir)
-                        elif file_path.endswith('.7z'):
-                            with py7zr.SevenZipFile(file_path, mode='r') as archive:
-                                archive.extractall(path=temp_dir)
+                        try:
+                            if file_path.endswith('.zip'):
+                                patoolib.extract_archive(file_path, outdir=temp_dir)
+                            elif file_path.endswith('.rar'):
+                                patoolib.extract_archive(file_path, outdir=temp_dir)
+                            elif file_path.endswith('.7z'):
+                                with py7zr.SevenZipFile(file_path, mode='r') as archive:
+                                    archive.extractall(path=temp_dir)
 
-                        # Scan the extracted files
-                        for extracted_root, extracted_dirs, extracted_files in os.walk(temp_dir):
-                            for extracted_file in extracted_files:
-                                extracted_file_path = os.path.join(extracted_root, extracted_file)
-                                # Check file extension and skip if not in the list of allowed extensions
-                                if not extracted_file_path.lower().endswith(tuple(file_extensions_to_scan)):
-                                    continue
-                                read_large_file(extracted_file_path)  # Use the appropriate file reading function
-
-                        # Clean up the temporary directory
-                        shutil.rmtree(temp_dir)
+                            # Scan the extracted files
+                            for extracted_root, extracted_dirs, extracted_files in os.walk(temp_dir):
+                                for extracted_file in extracted_files:
+                                    extracted_file_path = os.path.join(extracted_root, extracted_file)
+                                    # Check file extension and skip if not in the list of allowed extensions
+                                    if not extracted_file_path.lower().endswith(tuple(file_extensions_to_scan)):
+                                        continue
+                                    read_large_file(extracted_file_path)  # Use the appropriate file reading function
+                        except Exception as e:
+                            problem_files.append(f"Problem detected in archive: {file_path} (Error: {str(e)})")
+                            logging.error(f"Problem detected in archive: {file_path}")
+                            logging.error(f"Error: {str(e)}")
+                        finally:
+                            # Clean up the temporary directory after scanning
+                            shutil.rmtree(temp_dir)
                     else:
                         # Not an archive, scan the file directly
                         # Check file extension and skip if not in the list of allowed extensions
                         if not file_path.lower().endswith(tuple(file_extensions_to_scan)):
                             continue
                         read_large_file(file_path)  # Use the appropriate file reading function
+
+                except IsADirectoryError:
+                    problem_files.append(f"Skipped directory: {file_path} (Not a file)")
+                except FileNotFoundError:
+                    problem_files.append(f"File not found: {file_path}")
                 except Exception as e:
-                    problem_files.append(file_path)
+                    problem_files.append(f"Problem detected in file: {file_path} (Error: {str(e)})")
                     logging.error(f"Problem detected in file: {file_path}")
                     logging.error(f"Error: {str(e)}")
 
@@ -223,6 +235,9 @@ def scan_files(drives_to_scan, file_extensions_to_scan):
         logging.info("No problems detected in files.")
     else:
         logging.info(f"Problems found in {len(problem_files)} files.")
+        for problem_file in problem_files:
+            logging.info(problem_file)
+
 
 # Function to get GPU temperature for NVIDIA GPUs on Linux
 def get_gpu_temperature_nvidia():
