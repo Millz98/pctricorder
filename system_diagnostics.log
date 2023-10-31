@@ -6535,3 +6535,18 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-d 02:53:40 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IAAVQNQ.zip']' returned non-zero exit status 2
 2023-10-d 02:53:40 - ERROR: Problem detected in file: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IAAVQNQ.zip
 2023-10-d 02:53:40 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\808B'
+2023-10-d 02:55:39 - INFO: CPU Usage: 4.2%
+2023-10-d 02:55:39 - INFO: Memory Usage: 72.0%
+2023-10-d 02:55:39 - INFO: CPU Temperature: 0.0°C
+2023-10-d 02:55:39 - INFO: Total RAM: 8.00 GB
+2023-10-d 02:55:39 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 02:55:39 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
