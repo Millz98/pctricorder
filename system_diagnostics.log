@@ -900,3 +900,35 @@ CPU: arm
 2023-10-30 22:55:54 - INFO: === Hardware Information ===
 System: Darwin 22.6.0 (64bit)
 CPU: arm
+2023-10-30 23:01:22 - INFO: CPU Usage: 5.0%
+2023-10-30 23:01:22 - INFO: Memory Usage: 71.1%
+2023-10-30 23:01:22 - INFO: CPU Temperature: 0.0°C
+2023-10-30 23:01:22 - INFO: Total RAM: 8.00 GB
+2023-10-30 23:01:22 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 23:01:22 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 23:01:29 - INFO: Scanned drives: /dev/disk2s1
+2023-10-30 23:01:29 - INFO: No problems detected in files.
+2023-10-30 23:01:31 - INFO: CPU Usage: 1.9%
+2023-10-30 23:01:31 - INFO: Memory Usage: 71.3%
+2023-10-30 23:01:31 - INFO: CPU Temperature: 0.0°C
+2023-10-30 23:01:31 - INFO: Total RAM: 8.00 GB
+2023-10-30 23:01:31 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 23:01:31 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm

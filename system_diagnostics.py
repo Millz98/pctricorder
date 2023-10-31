@@ -162,7 +162,9 @@ def memory_map_file(file_path):
 
 def scan_files(drives_to_scan, file_extensions_to_scan):
     problem_files = []
+    scanned_drives = []  # Store the scanned drives
     for drive in tqdm(drives_to_scan, desc="Scanning Drives", unit="drive"):
+        scanned_drives.append(drive)  # Record the drive being scanned
         for root, dirs, files in os.walk(drive):
             for file in tqdm(files, desc="Scanning Files", unit="file", leave=False):
                 file_path = os.path.join(root, file)
@@ -195,15 +197,21 @@ def scan_files(drives_to_scan, file_extensions_to_scan):
                     else:
                         # Not an archive, scan the file directly
                         # Check file extension and skip if not in the list of allowed extensions
-                        if file_path.lower().endswith(tuple(file_extensions_to_scan)):
-                            read_large_file(file_path)  # Use the appropriate file reading function
+                        if not file_path.lower().endswith(tuple(file_extensions_to_scan)):
+                            continue
+                        read_large_file(file_path)  # Use the appropriate file reading function
                 except Exception as e:
                     problem_files.append(file_path)
                     logging.error(f"Problem detected in file: {file_path}")
                     logging.error(f"Error: {str(e)}")
+
+    # Log the scan results
+    logging.info(f"Scanned drives: {', '.join(scanned_drives)}")
     if not problem_files:
         logging.info("No problems detected in files.")
-    return problem_files
+    else:
+        logging.info(f"Problems found in {len(problem_files)} files.")
+
 
 def get_gpu_temperature_nvidia():
     if platform.system() == "Linux" and "NVIDIA" in platform.processor():
