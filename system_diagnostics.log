@@ -1010,3 +1010,19 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-30 23:27:24 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
 2023-10-30 23:28:10 - ERROR: Problem detected in file: F:\DoctorWho_AdventureGames.7z
 2023-10-30 23:28:10 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:35:56 - INFO: CPU Usage: 0.8%
+2023-10-30 23:35:56 - INFO: Memory Usage: 11.9%
+2023-10-30 23:35:56 - INFO: CPU Temperature: None°C
+2023-10-30 23:35:56 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:35:56 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:35:56 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:38:05 - INFO: CPU Usage: 1.7%
+2023-10-30 23:38:05 - INFO: Memory Usage: 11.9%
+2023-10-30 23:38:05 - INFO: CPU Temperature: None°C
+2023-10-30 23:38:05 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:38:05 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:38:05 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
