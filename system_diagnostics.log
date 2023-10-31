@@ -1026,3 +1026,259 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-30 23:38:05 - INFO: === Hardware Information ===
 System: Windows 10 (64bit)
 CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:43:02 - INFO: CPU Usage: 0.2%
+2023-10-30 23:43:02 - INFO: Memory Usage: 11.9%
+2023-10-30 23:43:02 - INFO: CPU Temperature: None°C
+2023-10-30 23:43:02 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:43:02 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:43:02 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:43:05 - ERROR: Problem detected in archive: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IKJKNQK.zip
+2023-10-30 23:43:05 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IKJKNQK.zip']' returned non-zero exit status 2
+2023-10-30 23:43:05 - ERROR: Problem detected in archive: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IMCMXG4.zip
+2023-10-30 23:43:05 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IMCMXG4.zip']' returned non-zero exit status 2
+2023-10-30 23:43:59 - ERROR: Problem detected in archive: D:\DLS\Anomaly-150-7-Update-3.7z
+2023-10-30 23:43:59 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:46:03 - ERROR: Problem detected in file: D:\DLS\MUGEN StreetFighter Extreme 2020.zip
+2023-10-30 23:46:03 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:11 - ERROR: Problem detected in file: D:\DLS\Shadows.of.Doubt.v33.19.rar
+2023-10-30 23:46:11 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:22 - ERROR: Problem detected in file: D:\DLS\Shadows.of.Doubt.v34.05.rar
+2023-10-30 23:46:22 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:42 - ERROR: Problem detected in archive: D:\DLS\Star_Trek_Voyager_Elite_Force_Win_Files_EN.7z
+2023-10-30 23:46:42 - ERROR: Error: [Errno 22] Invalid argument: 'D:\\DLS\\Star_Trek_Voyager_Elite_Force_Win_Files_EN.7z'
+2023-10-30 23:46:42 - ERROR: Problem detected in file: D:\DLS\Star_Trek_Voyager_Elite_Force_Win_Files_EN.7z
+2023-10-30 23:46:42 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:56 - ERROR: Problem detected in file: D:\DLS\Street Fighter x Tekken Mugenation Edition 2022.rar
+2023-10-30 23:46:56 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:57 - ERROR: Problem detected in file: D:\DLS\TheGardenOfEyesLauncher.zip
+2023-10-30 23:46:57 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:58 - ERROR: Problem detected in file: D:\DLS\WarfareALifeOverhaul_1_4_2.7z
+2023-10-30 23:46:58 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:58 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\2 Games in 1 - Dr. Mario & Puzzle League.zip
+2023-10-30 23:46:58 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:58 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Alienators - Evolution Continues.zip
+2023-10-30 23:46:58 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:58 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Atlantis - The Lost Empire.zip
+2023-10-30 23:46:58 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:58 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\BackTrack.zip
+2023-10-30 23:46:58 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:59 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Batman - Vengeance.zip
+2023-10-30 23:46:59 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:59 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Caesars Palace Advance - Millennium Gold Edition.zip
+2023-10-30 23:46:59 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:59 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Castlevania - Aria of Sorrow (U)(GBATemp).zip
+2023-10-30 23:46:59 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:59 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Castlevania - Circle of the Moon (U)(Cezar).zip
+2023-10-30 23:46:59 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:46:59 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Castlevania - Harmony of Dissonance (U)(Independent).zip
+2023-10-30 23:46:59 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:00 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Classic NES Series  Dr. Mario.zip
+2023-10-30 23:47:00 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:00 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Classic NES Series - Super Mario Bros.zip
+2023-10-30 23:47:00 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:00 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Contra Advance - The Alien Wars EX (U)  [0722].zip
+2023-10-30 23:47:00 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:00 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Crash Bandicoot Fusion (E)(Intro Hack)(Rising Sun).zip
+2023-10-30 23:47:00 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:00 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\David Beckham Soccer.zip
+2023-10-30 23:47:00 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:00 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Dexter's Laboratory - Deesaster Strikes.zip
+2023-10-30 23:47:00 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:01 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Dokapon.zip
+2023-10-30 23:47:01 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:01 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Donald Duck Advance.zip
+2023-10-30 23:47:01 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:01 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Ecks vs Sever.zip
+2023-10-30 23:47:01 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:01 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\ESPN Final Round Golf.zip
+2023-10-30 23:47:01 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:01 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\ESPN Great Outdoor Games - Bass 2002.zip
+2023-10-30 23:47:01 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:02 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\ESPN X-Games Skateboarding.zip
+2023-10-30 23:47:02 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:02 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Final Fantasy I & II - Dawn of Souls (U)(Independent).zip
+2023-10-30 23:47:02 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:02 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Final Fantasy IV (U).zip
+2023-10-30 23:47:02 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:02 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Final Fantasy Tactics Advance (U)(Eurasia).zip
+2023-10-30 23:47:02 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:02 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Final Fight One.zip
+2023-10-30 23:47:02 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:03 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Fire Emblem - The Sacred Stones (U)(TrashMan).zip
+2023-10-30 23:47:03 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:03 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Frogger's Adventures - Temple of the Frog.zip
+2023-10-30 23:47:03 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:03 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Golden Sun (U).zip
+2023-10-30 23:47:03 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:03 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Golden Sun - The Lost Age (U) (Megaroms) [0940].zip
+2023-10-30 23:47:03 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:04 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Harry Potter and the Sorcerer's Stone.zip
+2023-10-30 23:47:04 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:04 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Hello Kitty - Happy Party Pals (E).zip
+2023-10-30 23:47:04 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:04 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Hugo - The Evil Mirror Advance (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv,No,Da,Fi,Pl).zip
+2023-10-30 23:47:04 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:04 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Inspector Gadget - Advance Mission.zip
+2023-10-30 23:47:04 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:04 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\International Superstar Soccer.zip
+2023-10-30 23:47:04 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:04 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Iridion 3D.zip
+2023-10-30 23:47:04 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:05 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Jackie Chan Adventures - Legend of the Darkhand.zip
+2023-10-30 23:47:05 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:05 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Jimmy Neutron - Boy Genius.zip
+2023-10-30 23:47:05 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:05 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Jurassic Park III - Island Attack.zip
+2023-10-30 23:47:05 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:05 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Jurassic Park III - Park Builder.zip
+2023-10-30 23:47:05 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:05 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Kirby - Nightmare in Dream Land (U).zip
+2023-10-30 23:47:05 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:05 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Klonoa - Empire of Dreams.zip
+2023-10-30 23:47:05 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:06 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Konami Krazy Racers.zip
+2023-10-30 23:47:06 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:06 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Lady Sia.zip
+2023-10-30 23:47:06 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:06 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\LEGO Bionicle.zip
+2023-10-30 23:47:06 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:06 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\LEGO Island 2 - The Brickster's Revenge.zip
+2023-10-30 23:47:06 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:06 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\LEGO Racers 2.zip
+2023-10-30 23:47:06 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:07 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario And Luigi Superstar Saga (U)(Rising Sun).zip
+2023-10-30 23:47:07 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:07 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario Golf - Advance Tour.zip
+2023-10-30 23:47:07 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:07 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario Kart - Super Circuit (U)(iNFeRNO).zip
+2023-10-30 23:47:07 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:07 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario Party Advance.zip
+2023-10-30 23:47:07 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:07 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario Pinball Land.zip
+2023-10-30 23:47:07 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:08 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario Tennis Power Tour.zip
+2023-10-30 23:47:08 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:08 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mario vs. Donkey Kong (U)(Venom).zip
+2023-10-30 23:47:08 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:08 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mat Hoffman's Pro BMX.zip
+2023-10-30 23:47:08 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:08 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Metal Slug - Super Vehicle.zip
+2023-10-30 23:47:08 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:08 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Metroid - Fusion (U)(GBANow).zip
+2023-10-30 23:47:08 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:09 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Midnight Club - Street Racing.zip
+2023-10-30 23:47:09 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:09 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Monster Rancher Advance 2 .zip
+2023-10-30 23:47:09 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:09 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mortal Kombat - Tournament Edition (U) (Intro Hack) (Mode7) [1138].zip
+2023-10-30 23:47:09 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:09 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Mortal Kombat Advance (U) (Venom) [0247].zip
+2023-10-30 23:47:09 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:09 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\MX 2002 featuring Ricky Carmichael.zip
+2023-10-30 23:47:09 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:10 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Nancy Drew - Message in a Haunted Mansion.zip
+2023-10-30 23:47:10 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:10 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\No Rules - Get Phat.zip
+2023-10-30 23:47:10 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:10 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pinobee - Wings of Adventure.zip
+2023-10-30 23:47:10 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:10 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pokemon - Fire Red Version (U).zip
+2023-10-30 23:47:10 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:10 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pokemon - Leaf Green Verson (U).zip
+2023-10-30 23:47:10 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:11 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pokemon - Sapphire Version (U).zip
+2023-10-30 23:47:11 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:11 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pokemon chaos black.zip
+2023-10-30 23:47:11 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:11 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pokemon Emerald (U).zip
+2023-10-30 23:47:11 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:11 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Pokemon Pinball - Ruby & Sapphire (U).zip
+2023-10-30 23:47:11 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:12 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Power Rangers - Time Force.zip
+2023-10-30 23:47:12 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:12 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Powerpuff Girls - Mojo Jojo A-Go-Go.zip
+2023-10-30 23:47:12 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:12 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Rampage - Puzzle Attack.zip
+2023-10-30 23:47:12 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:12 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Razor Freestyle Scooter.zip
+2023-10-30 23:47:12 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:12 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Ready 2 Rumble Boxing - Round 2.zip
+2023-10-30 23:47:12 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:12 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Rocket Power - Dream Scheme.zip
+2023-10-30 23:47:12 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:13 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Rugrats - Castle Capers.zip
+2023-10-30 23:47:13 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:13 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Snood.zip
+2023-10-30 23:47:13 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:13 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Sonic Advance 3 (U)(Venom).zip
+2023-10-30 23:47:13 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:13 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\sonic advance.zip
+2023-10-30 23:47:13 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:13 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Spider-Man - Mysterio's Menace.zip
+2023-10-30 23:47:13 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:14 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\SpongeBob SquarePants - SuperSponge.zip
+2023-10-30 23:47:14 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:14 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Star Wars - Jedi Power Battles.zip
+2023-10-30 23:47:14 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:14 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\summon night2.zip
+2023-10-30 23:47:14 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:14 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Super Bust-A-Move.zip
+2023-10-30 23:47:14 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:14 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Super Mario Advance (U)(Eurasia).zip
+2023-10-30 23:47:14 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:15 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Super Mario Advance 2  Super Mario World.zip
+2023-10-30 23:47:15 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:15 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Super Mario Advance 3 - Yoshi's Island.zip
+2023-10-30 23:47:15 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:15 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Super Mario Advance 4 - Super Mario Bros. 3.zip
+2023-10-30 23:47:15 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:15 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Super_Dodgeball_Advance_(U)(Mode_7).zip
+2023-10-30 23:47:15 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:15 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Teenage Mutant Ninja Turtles (U).zip
+2023-10-30 23:47:15 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:15 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Tetris Worlds.zip
+2023-10-30 23:47:15 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:16 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\The Legend Of Zelda - A Link To The Past (U)(Mode7).zip
+2023-10-30 23:47:16 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:16 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\The Legend of Zelda - The Minish Cap (U)(Independent).zip
+2023-10-30 23:47:16 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:16 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Tweety and the Magic Gems.zip
+2023-10-30 23:47:16 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:16 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Ultimate Brain Games (US)(Eurasia).zip
+2023-10-30 23:47:16 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:16 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Wario Land 4 (E)(-Q).zip
+2023-10-30 23:47:16 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\Wario Ware Inc. (U) (Precision) [1005].zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\Gameboy Advance\roms\X-Men - Reign of Apocalypse.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\mmawvc30.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in archive: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\mame031b.zip
+2023-10-30 23:47:17 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\DLS\\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\\RETRO_LEGENDS rom pack\\MAME\\extras\\mame031b.zip']' returned non-zero exit status 2
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\mame031b.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in archive: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\mame031s.zip
+2023-10-30 23:47:17 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\DLS\\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\\RETRO_LEGENDS rom pack\\MAME\\extras\\mame031s.zip']' returned non-zero exit status 2
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\mame031s.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in archive: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\mame32b-031.zip
+2023-10-30 23:47:17 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\DLS\\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\\RETRO_LEGENDS rom pack\\MAME\\extras\\mame32b-031.zip']' returned non-zero exit status 2
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\mame32b-031.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in archive: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\pmame31.zip
+2023-10-30 23:47:17 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\DLS\\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\\RETRO_LEGENDS rom pack\\MAME\\extras\\pmame31.zip']' returned non-zero exit status 2
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\extras\pmame31.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:17 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\ROMS\1943kai.zip
+2023-10-30 23:47:17 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:18 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\ROMS\amigo.zip
+2023-10-30 23:47:18 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:18 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\ROMS\arkabeta.zip
+2023-10-30 23:47:18 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:18 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\ROMS\arkatayt.zip
+2023-10-30 23:47:18 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
+2023-10-30 23:47:18 - ERROR: Problem detected in file: D:\DLS\6666 in 1[ROM PACK] RETRO_LEGENDS [NES-SNES-NeoGeo-GBA-Mame-Sega Genesis-SMS-Atari-N64-TurboGrafX-ZX Spectrum]\RETRO_LEGENDS rom pack\MAME\ROMS\arkbl2.zip
+2023-10-30 23:47:18 - ERROR: Error: [WinError 5] Access is denied: 'temp_extracted\\MUGEN StreetFighter Extreme 2020\\chars\\Jin Saotome'
