@@ -1010,3 +1010,35 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-30 23:27:24 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
 2023-10-30 23:28:10 - ERROR: Problem detected in file: F:\DoctorWho_AdventureGames.7z
 2023-10-30 23:28:10 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:37:42 - INFO: CPU Usage: 3.5%
+2023-10-30 23:37:42 - INFO: Memory Usage: 72.4%
+2023-10-30 23:37:42 - INFO: CPU Temperature: 0.0°C
+2023-10-30 23:37:42 - INFO: Total RAM: 8.00 GB
+2023-10-30 23:37:42 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 23:37:42 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-30 23:37:47 - INFO: Scanned drives: /dev/disk3s1
+2023-10-30 23:37:47 - INFO: No problems detected in files.
+2023-10-30 23:37:49 - INFO: CPU Usage: 1.5%
+2023-10-30 23:37:49 - INFO: Memory Usage: 72.0%
+2023-10-30 23:37:49 - INFO: CPU Temperature: 0.0°C
+2023-10-30 23:37:49 - INFO: Total RAM: 8.00 GB
+2023-10-30 23:37:49 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-30 23:37:49 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
