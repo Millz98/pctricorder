@@ -24,14 +24,17 @@ file_handler.setFormatter(file_formatter)
 # Initialize the logging configuration with both handlers
 logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
 
+# Function to check CPU usage
 def check_cpu_usage():
     cpu_usage = psutil.cpu_percent(interval=1)
     logging.info(f"CPU Usage: {cpu_usage}%")
 
+# Function to check memory usage
 def check_memory_usage():
     virtual_memory = psutil.virtual_memory()
     logging.info(f"Memory Usage: {virtual_memory.percent}%")
 
+# Function to check CPU or GPU temperature based on the operating system
 def check_temperature():
     if platform.system() == "Darwin":
         try:
@@ -57,11 +60,13 @@ def check_temperature():
     else:
         logging.info("Temperature monitoring not supported on this OS")
 
+# Function to get RAM information
 def get_ram_info():
     virtual_memory = psutil.virtual_memory()
     total_ram = virtual_memory.total / (1024 ** 3)  # Convert to GB
     logging.info(f"Total RAM: {total_ram:.2f} GB")
 
+# Function to get GPU information based on the operating system
 def get_gpu_info():
     if platform.system() == "Darwin":
         try:
@@ -82,6 +87,7 @@ def get_gpu_info():
     else:
         logging.info("GPU information not available on this OS")
 
+# Function to display hardware information
 def display_hardware_info():
     hardware_info = []
     hardware_info.append("=== Hardware Information ===")
@@ -97,6 +103,7 @@ def display_hardware_info():
 
     return '\n'.join(hardware_info)
 
+# Function to list available drives
 def list_available_drives():
     available_drives = []
     for partition in psutil.disk_partitions():
@@ -108,6 +115,7 @@ def list_available_drives():
                 available_drives.append(partition.device)
     return available_drives
 
+# Function to display available drives
 def display_available_drives():
     available_drives_info = []
 
@@ -124,6 +132,7 @@ def display_available_drives():
         print("No drives found on the system.")
         return []
 
+# Function to read a large file synchronously
 def read_large_file(file_path, buffer_size=1024 * 1024):
     try:
         with open(file_path, 'rb') as file:
@@ -136,6 +145,7 @@ def read_large_file(file_path, buffer_size=1024 * 1024):
         logging.error(f"Error reading file: {file_path}")
         logging.error(f"Error: {str(e)}")
 
+# Function to read a large file asynchronously
 async def read_file_async(file_path):
     try:
         async with aiofiles.open(file_path, mode='rb') as file:
@@ -149,6 +159,7 @@ async def read_file_async(file_path):
         logging.error(f"Error reading file asynchronously: {file_path}")
         logging.error(f"Error: {str(e)}")
 
+# Function to memory-map a file
 def memory_map_file(file_path):
     try:
         with open(file_path, 'rb') as file:
@@ -160,6 +171,7 @@ def memory_map_file(file_path):
         logging.error(f"Error memory mapping file: {file_path}")
         logging.error(f"Error: {str(e)}")
 
+# Function to scan files on selected drives with specified file extensions
 def scan_files(drives_to_scan, file_extensions_to_scan):
     problem_files = []
     scanned_drives = []  # Store the scanned drives
@@ -212,7 +224,7 @@ def scan_files(drives_to_scan, file_extensions_to_scan):
     else:
         logging.info(f"Problems found in {len(problem_files)} files.")
 
-
+# Function to get GPU temperature for NVIDIA GPUs on Linux
 def get_gpu_temperature_nvidia():
     if platform.system() == "Linux" and "NVIDIA" in platform.processor():
         try:

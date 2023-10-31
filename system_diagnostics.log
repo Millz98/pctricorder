@@ -932,3 +932,51 @@ CPU: arm
 2023-10-30 23:01:31 - INFO: === Hardware Information ===
 System: Darwin 22.6.0 (64bit)
 CPU: arm
+2023-10-30 23:05:33 - INFO: CPU Usage: 0.2%
+2023-10-30 23:05:33 - INFO: Memory Usage: 10.2%
+2023-10-30 23:05:33 - INFO: CPU Temperature: None°C
+2023-10-30 23:05:33 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:05:33 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:05:33 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:06:18 - INFO: CPU Usage: 0.6%
+2023-10-30 23:06:19 - INFO: Memory Usage: 10.2%
+2023-10-30 23:06:19 - INFO: CPU Temperature: None°C
+2023-10-30 23:06:19 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:06:19 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:06:19 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:06:25 - ERROR: Problem detected in file: C:\$Recycle.Bin\S-1-5-21-1152465577-2415030020-1968446922-1001\$I97JGE1.7z
+2023-10-30 23:06:25 - ERROR: Error: not a 7z file
+2023-10-30 23:06:32 - ERROR: Problem detected in file: C:\Program Files\Google\Chrome\Application\118.0.5993.118\Installer\chrome.7z
+2023-10-30 23:06:32 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:06:32 - ERROR: Problem detected in file: C:\Program Files\Guild Wars 2\bin64\cef\libcef.zip
+2023-10-30 23:06:32 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'C:\\Program Files\\Guild Wars 2\\bin64\\cef\\libcef.zip']' returned non-zero exit status 2
+2023-10-30 23:06:34 - ERROR: Problem detected in file: C:\Program Files\NVIDIA Corporation\NvBackend\ApplicationOntology.7z
+2023-10-30 23:06:34 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
+2023-10-30 23:06:49 - ERROR: Problem detected in file: C:\Program Files (x86)\OpenOffice 4\share\config\images_brand.zip
+2023-10-30 23:06:49 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'C:\\Program Files (x86)\\OpenOffice 4\\share\\config\\images_brand.zip']' returned non-zero exit status 2
+2023-10-30 23:08:56 - ERROR: Problem detected in file: C:\Users\Millz98\AppData\Local\Packages\AppUp.IntelGraphicsExperience_8j3eq9eme6ctt\LocalState\Promotions\IntelMarketingMaterial.zip
+2023-10-30 23:08:56 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'C:\\Users\\Millz98\\AppData\\Local\\Packages\\AppUp.IntelGraphicsExperience_8j3eq9eme6ctt\\LocalState\\Promotions\\IntelMarketingMaterial.zip']' returned non-zero exit status 2
+2023-10-30 23:13:45 - INFO: CPU Usage: 0.3%
+2023-10-30 23:13:45 - INFO: Memory Usage: 11.8%
+2023-10-30 23:13:45 - INFO: CPU Temperature: None°C
+2023-10-30 23:13:45 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:13:45 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:13:45 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:14:00 - INFO: CPU Usage: 0.7%
+2023-10-30 23:14:00 - INFO: Memory Usage: 11.8%
+2023-10-30 23:14:00 - INFO: CPU Temperature: None°C
+2023-10-30 23:14:00 - INFO: Total RAM: 127.92 GB
+2023-10-30 23:14:00 - INFO: Active GPU: NVIDIA GeForce RTX 3060
+2023-10-30 23:14:00 - INFO: === Hardware Information ===
+System: Windows 10 (64bit)
+CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+2023-10-30 23:14:07 - ERROR: Problem detected in file: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IKJKNQK.zip
+2023-10-30 23:14:07 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IKJKNQK.zip']' returned non-zero exit status 2
+2023-10-30 23:14:07 - ERROR: Problem detected in file: D:\$RECYCLE.BIN\S-1-5-21-1152465577-2415030020-1968446922-1001\$IMCMXG4.zip
+2023-10-30 23:14:07 - ERROR: Error: Command `['C:\\Users\\Millz98\\scoop\\shims\\7z.EXE', 'x', '-otemp_extracted', '--', 'D:\\$RECYCLE.BIN\\S-1-5-21-1152465577-2415030020-1968446922-1001\\$IMCMXG4.zip']' returned non-zero exit status 2
