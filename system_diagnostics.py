@@ -87,7 +87,7 @@ def display_hardware_info():
     hardware_info.append("=== Hardware Information ===")
     hardware_info.append(f"System: {platform.system()} {platform.release()} ({platform.architecture()[0]})")
     hardware_info.append(f"CPU: {platform.processor()}")
-    
+
     # CPU, Memory, and GPU information
     check_cpu_usage()
     check_memory_usage()
@@ -109,12 +109,17 @@ def list_available_drives():
     return available_drives
 
 def display_available_drives():
-    available_drives = list_available_drives()
-    if available_drives:
+    available_drives_info = []
+
+    for drive in psutil.disk_partitions(all=True):
+        drive_info = psutil.disk_usage(drive.mountpoint)
+        available_drives_info.append((drive.device, drive_info))
+
+    if available_drives_info:
         print("Available drives:")
-        for idx, drive in enumerate(available_drives, start=1):
-            print(f"{idx}. {drive}")
-        return available_drives
+        for idx, (drive, drive_info) in enumerate(available_drives_info, start=1):
+            print(f"{idx}. {drive} - Size: {drive_info.total / (1024 ** 3):.2f} GB")
+        return available_drives_info
     else:
         print("No drives found on the system.")
         return []
@@ -190,9 +195,8 @@ def scan_files(drives_to_scan, file_extensions_to_scan):
                     else:
                         # Not an archive, scan the file directly
                         # Check file extension and skip if not in the list of allowed extensions
-                        if not file_path.lower().endswith(tuple(file_extensions_to_scan)):
-                            continue
-                        read_large_file(file_path)  # Use the appropriate file reading function
+                        if file_path.lower().endswith(tuple(file_extensions_to_scan)):
+                            read_large_file(file_path)  # Use the appropriate file reading function
                 except Exception as e:
                     problem_files.append(file_path)
                     logging.error(f"Problem detected in file: {file_path}")
@@ -217,23 +221,19 @@ def get_gpu_temperature_nvidia():
 if __name__ == "__main__":
     while True:
         logging.info(display_hardware_info())
-        
+
         # Wait for user input to choose an action
         user_input = input("Choose an action (R: Refresh, S: Scan Files, Q: Quit): ").lower()
-        
+
         if user_input == 'r':
             continue  # Refresh
         elif user_input == 's':
             available_drives = display_available_drives()
             if available_drives:
                 drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
-                drives_to_scan = [available_drives[int(choice) - 1] for choice in drive_choice if choice.isdigit() and 1 <= int(choice) <= len(available_drives)]
+                drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
                 if drives_to_scan:
-                    for drive in tqdm(drives_to_scan, desc="Scanning Drives", unit="drive"):
-                        for root, dirs, files in os.walk(drive):
-                            for file in tqdm(files, desc="Scanning Files", unit="file", leave=False):
-                                file_path = os.path.join(root, file)
-                                read_large_file(file_path)  # Use the appropriate file reading function
+                    scan_files(drives_to_scan, ('.zip', '.rar', '.7z'))  # Change the file extensions as needed
         elif user_input == 'q':
             break  # Quit
         else:
