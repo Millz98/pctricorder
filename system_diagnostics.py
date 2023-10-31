@@ -5,12 +5,16 @@ import logging
 import time
 import asyncio
 import aiofiles
-import mmap
-import shutil
 from tqdm import tqdm
-import patoolib
-import py7zr
 import subprocess
+import mmap
+import zipfile
+import patoolib
+from py7zr import SevenZipFile
+import pyclamav 
+
+# Define these variables at the module level
+file_extensions_to_scan = ('.zip', '.rar', '.7z')
 
 # Create a console handler with a custom log format
 console_handler = logging.StreamHandler()
@@ -18,7 +22,7 @@ console_handler.setFormatter(logging.Formatter('=== Hardware Information ===\nSy
 
 # Create a file handler to log to a file with timestamps
 file_handler = logging.FileHandler('system_diagnostics.log')
-file_formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s', datefmt='%Y-%m-d %H:%M:%S')
+file_formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 file_handler.setFormatter(file_formatter)
 
 # Initialize the logging configuration with both handlers
@@ -33,6 +37,16 @@ def check_cpu_usage():
 def check_memory_usage():
     virtual_memory = psutil.virtual_memory()
     logging.info(f"Memory Usage: {virtual_memory.percent}%")
+
+# Function to detect Malware in files
+def detect_malware(file_path):
+    try:
+        result = pyclamav.scan_file(file_path)
+        if result['result'] == 'infected':
+            return result['name'], result['virus']
+    except Exception as e:
+        return "Error scanning file", str(e)
+    return None    
 
 # Function to check CPU or GPU temperature based on the operating system
 def check_temperature():
@@ -115,6 +129,7 @@ def list_available_drives():
                 available_drives.append(partition.device)
     return available_drives
 
+# Function to display available drives
 def display_available_drives():
     available_drives_info = []
 
@@ -125,11 +140,8 @@ def display_available_drives():
     if available_drives_info:
         print("Available drives:")
         for idx, (drive, drive_info) in enumerate(available_drives_info, start=1):
-            if os.path.isdir(drive):  # Check if it's a directory
-                print(f"{idx}. {drive} - Size: {drive_info.total / (1024 ** 3):.2f} GB")
-            else:
-                print(f"{idx}. {drive} - Not a directory (skipped)")
-        return [drive_info for drive, drive_info in available_drives_info if os.path.isdir(drive)]
+            print(f"{idx}. {drive} - Size: {drive_info.total / (1024 ** 3):.2f} GB")
+        return available_drives_info
     else:
         print("No drives found on the system.")
         return []
@@ -173,79 +185,66 @@ def memory_map_file(file_path):
         logging.error(f"Error memory mapping file: {file_path}")
         logging.error(f"Error: {str(e)}")
 
+# Function to scan a single file
+async def scan_file(file_path, problem_files, scanned_files, file_extensions_to_scan):
+    try:
+        # Check if the file is an archive (zip, rar, or 7z)
+        if file_path.lower().endswith(('.zip', '.rar', '.7z')):
+            problem_files.append(f"Skipped archive file: {file_path}")
+        else:
+            # Not an archive, scan the file directly
+            # Check file extension and skip if not in the list of allowed extensions
+            if file_path.lower().endswith(tuple(file_extensions_to_scan)):
+                read_large_file(file_path)  # Use the appropriate file reading function
+            scanned_files.append(file_path)  # Add the scanned file to the list
+    except IsADirectoryError:
+        problem_files.append(f"Skipped directory: {file_path} (Not a file)")
+    except FileNotFoundError:
+        problem_files.append(f"File not found: {file_path}")
+    except Exception as e:
+        problem_files.append(f"Problem detected in file: {file_path} (Error: {str(e)}")
+        logging.error(f"Problem detected in file: {file_path}")
+        logging.error(f"Error: {str(e)}")
+        # Handle any additional exceptions here
+
 # Function to prepare and scan a single drive
 async def prepare_and_scan_drive(drive, file_extensions_to_scan):
     try:
+        problem_files = []  # Define the problem_files list
+        scanned_files = []  # Define the scanned_files list
+
         # Prepare the drive (e.g., list files and perform initial setup)
         for root, dirs, files in os.walk(drive):
             for file in files:
                 file_path = os.path.join(root, file)
                 # ... Handle file preparation tasks if needed
+                if not file_path.endswith(tuple(file_extensions_to_scan)):
+                    await scan_file(file_path, problem_files, scanned_files)
+
         logging.info(f"Prepared drive: {drive}")
 
         # Perform the scan on the prepared drive
-        await scan_files([drive], file_extensions_to_scan)
+        await scan_selected_drives([drive], file_extensions_to_scan, problem_files, scanned_files)
 
     except Exception as e:
         logging.error(f"Error preparing and scanning drive {drive}: {str(e)}")
 
+    # Log the scan results for all drives
+    logging.info("Scanning completed for all selected drives.")
+
 # Function to scan selected drives with specified file extensions
-async def scan_selected_drives(drives_to_scan, file_extensions_to_scan):
-    tasks = [prepare_and_scan_drive(drive, file_extensions_to_scan) for drive in drives_to_scan]
-    await asyncio.gather(*tasks)
-
-# Function to scan files on selected drives with specified file extensions
-async def scan_files(drives_to_scan, file_extensions_to_scan):
-    problem_files = []
-    scanned_drives = []  # Store the scanned drives
-    timeout = 120  # Set the maximum time in seconds for processing a file
-
-    async def scan_file(file_path):
+async def scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files):
+    async def scan_file(file_path, problem_files, scanned_files):
         try:
-            start_time = time.time()  # Record the start time
-
             # Check if the file is an archive (zip, rar, or 7z)
-            if file_path.endswith(('.zip', '.rar', '.7z')):
-                # Extract the archive to a temporary directory
-                temp_dir = "temp_extracted"
-                os.makedirs(temp_dir, exist_ok=True)
-
-                try:
-                    if file_path.endswith('.zip'):
-                        patoolib.extract_archive(file_path, outdir=temp_dir)
-                    elif file_path.endswith('.rar'):
-                        patoolib.extract_archive(file_path, outdir=temp_dir)
-                    elif file_path.endswith('.7z'):
-                        with py7zr.SevenZipFile(file_path, mode='r') as archive:
-                            archive.extractall(path=temp_dir)
-
-                    # Check the elapsed time and skip if it exceeds the timeout
-                    elapsed_time = time.time() - start_time
-                    if elapsed_time > timeout:
-                        logging.warning(f"Skipping file due to timeout: {file_path}")
-                        return
-
-                    # Scan the extracted files
-                    for extracted_root, extracted_dirs, extracted_files in os.walk(temp_dir):
-                        for extracted_file in extracted_files:
-                            extracted_file_path = os.path.join(extracted_root, extracted_file)
-                            # Check file extension and skip if not in the list of allowed extensions
-                            if not extracted_file_path.lower().endswith(tuple(file_extensions_to_scan)):
-                                continue
-                            read_large_file(extracted_file_path)  # Use the appropriate file reading function
-                except Exception as e:
-                    problem_files.append(f"Problem detected in archive: {file_path} (Error: {str(e)})")
-                    logging.error(f"Problem detected in archive: {file_path}")
-                    logging.error(f"Error: {str(e)}")
-                finally:
-                    # Clean up the temporary directory after scanning
-                    shutil.rmtree(temp_dir)
+            if file_path.lower().endswith(('.zip', '.rar', '.7z')):
+                problem_files.append(f"Skipped archive file: {file_path}")
             else:
                 # Not an archive, scan the file directly
                 # Check file extension and skip if not in the list of allowed extensions
-                if file_path.lower().endswith(tuple(file_extensions_to_scan)):  # Corrected 'endsuffix' to 'endswith'
+                if file_path.lower().endswith(tuple(file_extensions_to_scan)):
                     read_large_file(file_path)  # Use the appropriate file reading function
-
+                scanned_files.append(file_path)  # Add the scanned file to the list
         except IsADirectoryError:
             problem_files.append(f"Skipped directory: {file_path} (Not a file)")
         except FileNotFoundError:
@@ -254,18 +253,36 @@ async def scan_files(drives_to_scan, file_extensions_to_scan):
             problem_files.append(f"Problem detected in file: {file_path} (Error: {str(e)}")
             logging.error(f"Problem detected in file: {file_path}")
             logging.error(f"Error: {str(e)}")
+            # Handle any additional exceptions here
 
-    tasks = [scan_file(file_path) for drive in drives_to_scan for root, _, files in os.walk(drive) for file in files for file_path in [os.path.join(root, file)]]
-    await asyncio.gather(*tasks)
+    problem_files = []  # Define the problem_files list
+    scanned_files = []  # Define the scanned_files list
+
+    malware_result = detect_malware(file_path)
+    if malware_result:
+        problem_files.append(f"Malware Detected: {malware_result[0]} - {malware_result[1]}")
+
+    for drive in drives_to_scan:
+        for root, _, files in os.walk(drive):
+            for file in files:
+                file_path = os.path.join(root, file)
+                await scan_file(file_path, problem_files, scanned_files)
+
+                # Update the progress bar
+                pbar.update(1)
 
     # Log the scan results
-    logging.info(f"Scanned drives: {', '.join(scanned_drives)}")
+    logging.info(f"Scanned drives: {', '.join(drives_to_scan)}")
     if not problem_files:
         logging.info("No problems detected in files.")
     else:
         logging.info(f"Problems found in {len(problem_files)} files.")
         for problem_file in problem_files:
             logging.info(problem_file)
+    if scanned_files:
+        logging.info("Scanned files:")
+        for scanned_file in scanned_files:
+            logging.info(scanned_file)
 
 # Function to get GPU temperature for NVIDIA GPUs on Linux
 def get_gpu_temperature_nvidia():
@@ -282,6 +299,8 @@ def get_gpu_temperature_nvidia():
         return None
 
 if __name__ == "__main__":
+    problem_files = []  # Define the problem_files list
+    scanned_files = []  # Define the scanned_files list
     while True:
         logging.info(display_hardware_info())
 
@@ -294,14 +313,14 @@ if __name__ == "__main__":
             available_drives = display_available_drives()
             if available_drives:
                 drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
-                drives_to_scan = [available_drive[0] for available_drive in available_drives if available_drive[0] in drive_choice]
+                drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
+                print(f"Selected drives to scan: {drives_to_scan}")  # Debugging output
                 if drives_to_scan:
-                    for drive_info in drives_to_scan:
-                        drive = drive_info[0]
-                        for root, dirs, files in os.walk(drive):
-                            for file in files:
-                                file_path = os.path.join(root, file)
-                                read_large_file(file_path)  # Use the appropriate file reading function
+                    # Create a progress bar
+                    with tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan)) as pbar:
+                        # Print the drives you're going to scan
+                        print(f"Scanning the following drives: {', '.join(drives_to_scan)}")
+                        asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files)) # Change the file extensions as needed
         elif user_input == 'q':
             break  # Quit
         else:
