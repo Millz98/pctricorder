@@ -27,6 +27,52 @@ file_handler.setFormatter(file_formatter)
 # Initialize the logging configuration with both handlers
 logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
 
+# Function to start a scan
+def start_scan(drives_to_scan):
+    problem_files = []  # Define the problem_files list
+    scanned_files = []  # Define the scanned_files list
+
+    # Log that the scan is starting
+    logging.info("Scan started for the following drives: " + ', '.join(drives_to_scan))
+
+    # Scan the selected drives
+    for drive in drives_to_scan:
+        scan_drive(drive, problem_files, scanned_files)
+
+    # Log that the scan is completed
+    logging.info("Scan completed for all selected drives.")
+
+    # Log the scan results
+    if not problem_files:
+        logging.info("No problems detected in files.")
+    else:
+        logging.info(f"Problems found in {len(problem_files)} files.")
+        for problem_file in problem_files:
+            logging.info(problem_file)
+    if scanned_files:
+        logging.info("Scanned files:")
+        for scanned_file in scanned_files:
+            logging.info(scanned_file)
+
+# Function to scan a single drive
+def scan_drive(drive, problem_files, scanned_files):
+    try:
+        # Prepare the drive (e.g., list files and perform initial setup)
+        for root, _, files in os.walk(drive):
+            for file in files:
+                file_path = os.path.join(root, file)
+                # Handle file preparation tasks if needed
+                if not file_path.endswith(tuple(file_extensions_to_scan)):
+                    scan_file(file_path, problem_files, scanned_files)
+
+        logging.info(f"Prepared drive: {drive}")
+
+        # Perform the scan on the prepared drive
+        scan_selected_drives([drive], problem_files, scanned_files)
+
+    except Exception as e:
+        logging.error(f"Error preparing and scanning drive {drive}: {str(e)}")
+
 # Function to check CPU usage
 def check_cpu_usage():
     cpu_usage = psutil.cpu_percent(interval=1)
