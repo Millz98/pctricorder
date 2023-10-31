@@ -3464,3 +3464,63 @@ CPU: Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
 2023-10-30 23:28:10 - ERROR: Problem detected in file: F:\DoctorWho_AdventureGames.7z
 2023-10-30 23:28:10 - ERROR: Error: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
 >>>>>>> 681655bb668507d7ab60bd6998e15157307412ad
+2023-10-d 02:26:40 - INFO: CPU Usage: 4.0%
+2023-10-d 02:26:40 - INFO: Memory Usage: 73.2%
+2023-10-d 02:26:40 - INFO: CPU Temperature: 0.0°C
+2023-10-d 02:26:40 - INFO: Total RAM: 8.00 GB
+2023-10-d 02:26:41 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 02:26:41 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 02:28:08 - INFO: CPU Usage: 3.3%
+2023-10-d 02:28:08 - INFO: Memory Usage: 73.6%
+2023-10-d 02:28:08 - INFO: CPU Temperature: 0.0°C
+2023-10-d 02:28:08 - INFO: Total RAM: 8.00 GB
+2023-10-d 02:28:08 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 02:28:08 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 02:30:51 - INFO: CPU Usage: 3.6%
+2023-10-d 02:30:51 - INFO: Memory Usage: 71.7%
+2023-10-d 02:30:51 - INFO: CPU Temperature: 0.0°C
+2023-10-d 02:30:51 - INFO: Total RAM: 8.00 GB
+2023-10-d 02:30:51 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 02:30:51 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm
+2023-10-d 02:30:54 - INFO: CPU Usage: 2.1%
+2023-10-d 02:30:54 - INFO: Memory Usage: 71.5%
+2023-10-d 02:30:54 - INFO: CPU Temperature: 0.0°C
+2023-10-d 02:30:54 - INFO: Total RAM: 8.00 GB
+2023-10-d 02:30:54 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-10-d 02:30:54 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm

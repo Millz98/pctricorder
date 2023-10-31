@@ -115,7 +115,6 @@ def list_available_drives():
                 available_drives.append(partition.device)
     return available_drives
 
-# Function to display available drives
 def display_available_drives():
     available_drives_info = []
 
@@ -126,8 +125,11 @@ def display_available_drives():
     if available_drives_info:
         print("Available drives:")
         for idx, (drive, drive_info) in enumerate(available_drives_info, start=1):
-            print(f"{idx}. {drive} - Size: {drive_info.total / (1024 ** 3):.2f} GB")
-        return available_drives_info
+            if os.path.isdir(drive):  # Check if it's a directory
+                print(f"{idx}. {drive} - Size: {drive_info.total / (1024 ** 3):.2f} GB")
+            else:
+                print(f"{idx}. {drive} - Not a directory (skipped)")
+        return [drive_info for drive, drive_info in available_drives_info if os.path.isdir(drive)]
     else:
         print("No drives found on the system.")
         return []
@@ -292,11 +294,14 @@ if __name__ == "__main__":
             available_drives = display_available_drives()
             if available_drives:
                 drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
-                drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
+                drives_to_scan = [available_drive[0] for available_drive in available_drives if available_drive[0] in drive_choice]
                 if drives_to_scan:
-                    # Create a progress bar
-                    with tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan)) as pbar:
-                        asyncio.run(scan_selected_drives(drives_to_scan, ('.zip', '.rar', '.7z')))  # Change the file extensions as needed
+                    for drive_info in drives_to_scan:
+                        drive = drive_info[0]
+                        for root, dirs, files in os.walk(drive):
+                            for file in files:
+                                file_path = os.path.join(root, file)
+                                read_large_file(file_path)  # Use the appropriate file reading function
         elif user_input == 'q':
             break  # Quit
         else:
