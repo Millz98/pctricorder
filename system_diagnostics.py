@@ -16,6 +16,7 @@ from py7zr import SevenZipFile
 file_extensions_to_scan = ('.zip', '.rar', '.7z')
 problem_files = []  # Define the problem_files list
 scanned_files = []  # Define the scanned_files list
+global_pbar = None  # Define the global progress bar
 
 # Create a console handler with a custom log format
 console_handler = logging.StreamHandler()
@@ -284,13 +285,14 @@ async def prepare_and_scan_drive(drive, file_extensions_to_scan):
 # Function to scan selected drives with specified file extensions
 async def scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files):
     for drive in drives_to_scan:
-        for root, _, files in os.walk(drive):
-            for file in files:
-                file_path = os.path.join(root, file)
-                if not any(file_path.lower().endswith(ext) for ext in file_extensions_to_scan):
-                    continue  # Skip files with non-allowed extensions
-                await scan_file(file_path, problem_files, scanned_files, file_extensions_to_scan)
-                pbar.update(1)
+        if os.path.isdir(drive):
+            for root, _, files in os.walk(drive):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    if not any(file_path.lower().endswith(ext) for ext in file_extensions_to_scan):
+                        continue  # Skip files with non-allowed extensions
+                    await scan_file(file_path, problem_files, scanned_files, file_extensions_to_scan)
+                    global_pbar.update(1)
 
 # Function to get GPU temperature for NVIDIA GPUs on Linux
 def get_gpu_temperature_nvidia():
@@ -315,19 +317,19 @@ if __name__ == "__main__":
             continue  # Refresh
         elif user_input == 's':
             available_drives = display_available_drives()
-            if available_drives:
-                drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
-                drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
-                if drives_to_scan:
-                    with tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan)) as pbar:
-                        problem_files = []  # Reset problem_files
-                        scanned_files = []  # Reset scanned_files
-                        asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files))
-                        
+        if available_drives:
+            drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
+            drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
+        if drives_to_scan:
+            global_pbar = tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan if os.path.isdir(drive)))
+            problem_files = []  # Reset problem_files
+            scanned_files = []  # Reset scanned_files
+            asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files))
+               
                         # Check if any problems were detected and log accordingly
-                        if not problem_files:
+            if not problem_files:
                             logging.info("No problems detected in files.")
-                        else:
+            else:
                             logging.info(f"Problems found in {len(problem_files)} files.")
                             for problem_file in problem_files:
                                 logging.info(problem_file)
