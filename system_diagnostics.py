@@ -317,24 +317,30 @@ if __name__ == "__main__":
             continue  # Refresh
         elif user_input == 's':
             available_drives = display_available_drives()
-        if available_drives:
-            drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
-            drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
-        if drives_to_scan:
-            global_pbar = tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan if os.path.isdir(drive)))
-            problem_files = []  # Reset problem_files
-            scanned_files = []  # Reset scanned_files
-            asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files))
-               
-                        # Check if any problems were detected and log accordingly
-            if not problem_files:
-                            logging.info("No problems detected in files.")
-            else:
-                            logging.info(f"Problems found in {len(problem_files)} files.")
-                            for problem_file in problem_files:
-                                logging.info(problem_file)
+            if available_drives:
+                drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
+                drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
+                if drives_to_scan:
+                    global_pbar = tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan if os.path.isdir(drive)))
+                    problem_files = []  # Reset problem_files
+                    scanned_files = []  # Reset scanned_files
+                    try:
+                        asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files))
+                    finally:
+                        # Close the progress bar before exiting
+                        global_pbar.close()
+
+                    # Check if any problems were detected and log accordingly
+                    if not problem_files:
+                        logging.info("No problems detected in files.")
+                    else:
+                        logging.info(f"Problems found in {len(problem_files)} files.")
+                        for problem_file in problem_files:
+                            logging.info(problem_file)
         elif user_input == 'q':
+            print("Thank you for using PCtricorder!")
             break  # Quit
         else:
             logging.info("Invalid input. Please choose a valid action.")
         time.sleep(1)
+
