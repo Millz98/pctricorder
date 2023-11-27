@@ -33,7 +33,7 @@ file_handler.setFormatter(file_formatter)
 # Initialize the logging configuration with both handlers
 logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
 
-# Function to check battery health
+# Function for battery check
 def check_battery_health():
     try:
         if platform.system() == "Windows":
@@ -566,7 +566,7 @@ if __name__ == "__main__":
         log_historical_data(cpu_usage, memory_percent, timestamp)
 
         logging.info(display_hardware_info())
-        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, B: Battery check, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
+        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, B: Battery Check, N: Perform Network Diagnostics, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
 
 
 
