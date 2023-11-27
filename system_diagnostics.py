@@ -10,6 +10,7 @@ import socket
 import speedtest
 import subprocess
 import mmap
+import sys
 import zipfile
 import patoolib
 from py7zr import SevenZipFile 
@@ -117,19 +118,19 @@ def perform_security_checks():
             logging.info("Checking for software updates...")
             update_command = "winget upgrade --all"
             # Run the update command with tqdm progress bar
-        with tqdm(total=100, desc="Updating", dynamic_ncols=True) as pbar:
             update_process = subprocess.Popen(update_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=True, bufsize=1, universal_newlines=True)
 
-            for line in update_process.stdout:
-                # Check if the line contains progress information
-                # You need to adjust this based on the actual output format of the command
-                if "progress" in line:
-                    # Extract progress information and update the progress bar
-                    progress_value = extract_progress_from_line(line)
-                    pbar.update(progress_value)
+        for line in update_process.stdout:
+            # Check if the line contains progress information
+            # You need to adjust this based on the actual output format of the command
+            if "progress" in line:
+                # Extract progress information and update the simple progress bar
+                sys.stdout.write('\r' + line)
+                sys.stdout.flush()
 
-            # Wait for the process to complete
-            update_process.wait()
+        # Wait for the process to complete
+        update_process.wait()
+        sys.stdout.write('\n')  # Move to the next line after completion
 
     except Exception as e:
         logging.error(f"Error performing security checks: {str(e)}")
