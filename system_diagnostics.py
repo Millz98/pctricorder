@@ -105,13 +105,40 @@ def perform_security_checks():
 
         # Scan for malware
         scan_for_malware()
+        # For example, scan for malware or check antivirus status
+        logging.info("Performing security checks...")
+        
 
         # You can add more security checks here
 
         logging.info("Security checks completed.")
+    # Check for software updates on Windows
+        if platform.system() == "Windows":
+            logging.info("Checking for software updates...")
+            update_command = "winget upgrade --all"
+            # Run the update command with tqdm progress bar
+        with tqdm(total=100, desc="Updating", dynamic_ncols=True) as pbar:
+            update_process = subprocess.Popen(update_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=True, bufsize=1, universal_newlines=True)
+
+            for line in update_process.stdout:
+                # Check if the line contains progress information
+                # You need to adjust this based on the actual output format of the command
+                if "progress" in line:
+                    # Extract progress information and update the progress bar
+                    progress_value = extract_progress_from_line(line)
+                    pbar.update(progress_value)
+
+            # Wait for the process to complete
+            update_process.wait()
 
     except Exception as e:
         logging.error(f"Error performing security checks: {str(e)}")
+
+def extract_progress_from_line(line):
+    # Implement logic to extract progress information from the line
+    # You need to adjust this based on the actual output format of the command
+    # Return the progress value (percentage) as an integer
+    return 10  # Placeholder value, replace with actual extraction logic   
 
 def check_antivirus_status():
     if platform.system() == "Windows":
@@ -120,20 +147,32 @@ def check_antivirus_status():
             result = subprocess.run(['powershell', 'Get-MpComputerStatus'], capture_output=True, text=True, check=True)
             logging.info(f"Antivirus Status: {result.stdout.strip()}")
 
+            
+
         except subprocess.CalledProcessError as e:
             logging.error(f"Error checking antivirus status: {e.stderr}")
 
     # You can add similar checks for other operating systems
-
+# Malware scan code below
 def scan_for_malware():
-    if platform.system() == "Windows":
-        try:
+    try:
+        if platform.system() == "Windows":
             # Run a command to scan for malware on Windows
             result = subprocess.run(['powershell', 'Start-MpScan'], capture_output=True, text=True, check=True)
-            logging.info(f"Malware Scan Result: {result.stdout.strip()}")
+            log_malware_scan_result(result.stdout)
 
-        except subprocess.CalledProcessError as e:
-            logging.error(f"Error scanning for malware: {e.stderr}")  
+        # Add conditions for other operating systems if needed
+
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error scanning for malware: {e.stderr}")
+
+def log_malware_scan_result(scan_output):
+    # Display the results of the malware scan
+    if "No threats detected" in scan_output:
+        logging.info("Malware Scan Result: No threats found.")
+    else:
+        logging.warning("Malware Scan Result: Potential threats detected.")
+        logging.warning(f"Scan output:\n{scan_output}") 
 
 #Function to check for software updates of the OS this is running on
 def check_updates():
