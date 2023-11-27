@@ -135,12 +135,6 @@ def perform_security_checks():
     except Exception as e:
         logging.error(f"Error performing security checks: {str(e)}")
 
-def extract_progress_from_line(line):
-    # Implement logic to extract progress information from the line
-    # You need to adjust this based on the actual output format of the command
-    # Return the progress value (percentage) as an integer
-    return 10  # Placeholder value, replace with actual extraction logic   
-
 def check_antivirus_status():
     if platform.system() == "Windows":
         try:
