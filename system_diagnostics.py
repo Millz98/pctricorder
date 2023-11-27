@@ -10,6 +10,8 @@ import socket
 import speedtest
 import subprocess
 import mmap
+import csv
+import pandas as pd
 import zipfile
 import patoolib
 from py7zr import SevenZipFile 
@@ -31,6 +33,23 @@ file_handler.setFormatter(file_formatter)
 
 # Initialize the logging configuration with both handlers
 logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
+
+# Function for historical data
+def log_historical_data(cpu_usage, memory_percent, timestamp):
+    historical_data_file = 'historical_data.csv'
+
+    # Check if the file exists; create headers if not
+    file_exists = os.path.isfile(historical_data_file)
+    with open(historical_data_file, 'a', newline='') as file:
+        fieldnames = ['Timestamp', 'CPU Usage', 'Memory Percent']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        # Write the data to the CSV file
+        writer.writerow({'Timestamp': timestamp, 'CPU Usage': cpu_usage, 'Memory Percent': memory_percent})
+
 
 # Function for System recommendations
 def system_recommendations(cpu_usage, memory_percent):
@@ -485,6 +504,7 @@ def get_gpu_temperature_nvidia():
         logging.info("GPU temperature monitoring not supported on this system.")
         return None
 
+# the main loop
 if __name__ == "__main__":
     # Display system recommendations at the beginning
     logging.info("=== System Recommendations ===")
@@ -500,8 +520,14 @@ if __name__ == "__main__":
         logging.info("No specific recommendations at the moment.")
 
     while True:
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+
+        # Log historical data
+        log_historical_data(cpu_usage, memory_percent, timestamp)
+
         logging.info(display_hardware_info())
         user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
+
 
 
         if user_input == 'r':
