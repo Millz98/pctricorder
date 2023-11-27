@@ -11,7 +11,6 @@ import speedtest
 import subprocess
 import mmap
 import csv
-import pandas as pd
 import zipfile
 import patoolib
 from py7zr import SevenZipFile 
@@ -204,7 +203,8 @@ def check_antivirus_status():
         except subprocess.CalledProcessError as e:
             logging.error(f"Error checking antivirus status: {e.stderr}")
 
-    # You can add similar checks for other operating systems
+# You can add similar checks for other operating systems
+
 # Malware scan code below
 def scan_for_malware():
     try:
