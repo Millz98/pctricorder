@@ -566,7 +566,7 @@ if __name__ == "__main__":
         log_historical_data(cpu_usage, memory_percent, timestamp)
 
         logging.info(display_hardware_info())
-        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, B: Battery Check, N: Perform Network Diagnostics, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
+        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, B: Battery Check(Laptop), N: Perform Network Diagnostics, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
 
 
 
