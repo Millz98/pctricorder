@@ -10,7 +10,6 @@ import socket
 import speedtest
 import subprocess
 import mmap
-import sys
 import zipfile
 import patoolib
 from py7zr import SevenZipFile 
@@ -118,22 +117,28 @@ def perform_security_checks():
             logging.info("Checking for software updates...")
             update_command = "winget upgrade --all"
             # Run the update command with tqdm progress bar
+        with tqdm(total=100, desc="Updating", dynamic_ncols=True) as pbar:
             update_process = subprocess.Popen(update_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=True, bufsize=1, universal_newlines=True)
 
-        for line in update_process.stdout:
-            # Check if the line contains progress information
-            # You need to adjust this based on the actual output format of the command
-            if "progress" in line:
-                # Extract progress information and update the simple progress bar
-                sys.stdout.write('\r' + line)
-                sys.stdout.flush()
+            for line in update_process.stdout:
+                # Check if the line contains progress information
+                # You need to adjust this based on the actual output format of the command
+                if "progress" in line:
+                    # Extract progress information and update the progress bar
+                    progress_value = extract_progress_from_line(line)
+                    pbar.update(progress_value)
 
-        # Wait for the process to complete
-        update_process.wait()
-        sys.stdout.write('\n')  # Move to the next line after completion
+            # Wait for the process to complete
+            update_process.wait()
 
     except Exception as e:
         logging.error(f"Error performing security checks: {str(e)}")
+
+def extract_progress_from_line(line):
+    # Implement logic to extract progress information from the line
+    # You need to adjust this based on the actual output format of the command
+    # Return the progress value (percentage) as an integer
+    return 10  # Placeholder value, replace with actual extraction logic   
 
 def check_antivirus_status():
     if platform.system() == "Windows":
