@@ -513,6 +513,15 @@ if __name__ == "__main__":
 
     recommendations = system_recommendations(cpu_usage, memory_percent)
 
+     # Collect CPU usage and memory percent
+    cpu_usage = psutil.cpu_percent(interval=1)
+    memory_percent = psutil.virtual_memory().percent
+
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")  # current timestamp
+
+    # Log historical data
+    log_historical_data(cpu_usage, memory_percent, timestamp)
+
     if recommendations:
         for recommendation in recommendations:
             logging.info("- " + recommendation)
