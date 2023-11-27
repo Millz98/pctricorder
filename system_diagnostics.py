@@ -12,7 +12,6 @@ import zipfile
 import patoolib
 from py7zr import SevenZipFile 
 
-
 # Define these variables at the module level
 file_extensions_to_scan = ('.zip', '.rar', '.7z')
 problem_files = []  # Define the problem_files list
