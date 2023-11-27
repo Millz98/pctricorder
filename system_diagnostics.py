@@ -6,6 +6,8 @@ import time
 import asyncio
 import aiofiles
 from tqdm import tqdm
+import socket
+import speedtest
 import subprocess
 import mmap
 import zipfile
@@ -50,6 +52,88 @@ def start_scan(drives_to_scan):
         logging.info("Problems found in files:")
         for problem_file in problem_files:
             logging.info(problem_file)
+
+# Function to display storage information
+def display_storage_info():
+    storage_info = []
+    storage_info.append("=== Storage Information ===")
+    for partition in psutil.disk_partitions():
+        usage = psutil.disk_usage(partition.mountpoint)
+        storage_info.append(f"{partition.device} - Total: {usage.total / (1024 ** 3):.2f} GB, Free: {usage.free / (1024 ** 3):.2f} GB, Used: {usage.percent}%")
+    return '\n'.join(storage_info)
+
+# Function to perform network diagnostics
+def perform_network_diagnostics():
+    try:
+        # Check network connectivity using ping
+        target_host = "www.google.ca"
+        response = subprocess.run(["ping", "-c", "4", target_host], capture_output=True, text=True, check=True)
+
+        if "4 packets transmitted, 4 received" in response.stdout:
+            logging.info("Ping Test: Network is reachable.")
+        else:
+            logging.warning("Ping Test: Network is unreachable.")
+
+        # Measure network speed
+        st = speedtest.Speedtest()
+        download_speed = st.download() / 10**6  # in Mbps
+        upload_speed = st.upload() / 10**6  # in Mbps
+        logging.info(f"Speed Test: Download Speed: {download_speed:.2f} Mbps, Upload Speed: {upload_speed:.2f} Mbps")
+
+        # DNS resolution check
+        try:
+            socket.gethostbyname(target_host)
+            logging.info("DNS Resolution: DNS is working properly.")
+        except socket.error:
+            logging.warning("DNS Resolution: Unable to resolve DNS.")
+
+        # Traceroute
+        target_ip = socket.gethostbyname(target_host)
+        traceroute_output = subprocess.run(["traceroute", target_ip], capture_output=True, text=True)
+        logging.info(f"Traceroute:\n{traceroute_output.stdout}")    
+
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error during network diagnostics: {e.stderr}")
+        logging.warning("Ping Test: Network is unreachable. Check network configuration and firewall settings.")
+    except Exception as e:
+        logging.error(f"Unexpected error during network diagnostics: {str(e)}")
+
+def perform_security_checks():
+    try:
+        # Check for antivirus status
+        check_antivirus_status()
+
+        # Scan for malware
+        scan_for_malware()
+
+        # You can add more security checks here
+
+        logging.info("Security checks completed.")
+
+    except Exception as e:
+        logging.error(f"Error performing security checks: {str(e)}")
+
+def check_antivirus_status():
+    if platform.system() == "Windows":
+        try:
+            # Run a command to check antivirus status on Windows
+            result = subprocess.run(['powershell', 'Get-MpComputerStatus'], capture_output=True, text=True, check=True)
+            logging.info(f"Antivirus Status: {result.stdout.strip()}")
+
+        except subprocess.CalledProcessError as e:
+            logging.error(f"Error checking antivirus status: {e.stderr}")
+
+    # You can add similar checks for other operating systems
+
+def scan_for_malware():
+    if platform.system() == "Windows":
+        try:
+            # Run a command to scan for malware on Windows
+            result = subprocess.run(['powershell', 'Start-MpScan'], capture_output=True, text=True, check=True)
+            logging.info(f"Malware Scan Result: {result.stdout.strip()}")
+
+        except subprocess.CalledProcessError as e:
+            logging.error(f"Error scanning for malware: {e.stderr}")        
 
 # Function to scan a single drive
 def scan_drive(drive, problem_files, scanned_files):
@@ -311,34 +395,40 @@ def get_gpu_temperature_nvidia():
 if __name__ == "__main__":
     while True:
         logging.info(display_hardware_info())
-        user_input = input("Choose an action (R: Refresh, S: Scan Files, Q: Quit): ").lower()
+        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Perform Security Checks, Q: Quit): ").lower()
 
         if user_input == 'r':
             continue  # Refresh
         elif user_input == 's':
+            # Existing code for scanning files
             available_drives = display_available_drives()
             if available_drives:
                 drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
                 drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
                 if drives_to_scan:
-                    global_pbar = tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan if os.path.isdir(drive)))
-                    problem_files = []  # Reset problem_files
-                    scanned_files = []  # Reset scanned_files
-                    try:
+                    with tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan if os.path.isdir(drive))) as pbar:
+                        problem_files = []  # Reset problem_files
+                        scanned_files = []  # Reset scanned_files
                         asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files))
-                    finally:
-                        # Close the progress bar before exiting
-                        global_pbar.close()
-
-                    # Check if any problems were detected and log accordingly
-                    if not problem_files:
-                        logging.info("No problems detected in files.")
-                    else:
-                        logging.info(f"Problems found in {len(problem_files)} files.")
-                        for problem_file in problem_files:
-                            logging.info(problem_file)
+                        
+                        # Check if any problems were detected and log accordingly
+                        if not problem_files:
+                            logging.info("No problems detected in files.")
+                        else:
+                            logging.info(f"Problems found in {len(problem_files)} files.")
+                            for problem_file in problem_files:
+                                logging.info(problem_file)
+        elif user_input == 'd':
+            # Display storage information
+            logging.info(display_storage_info())
+        elif user_input == 'n':
+            # Perform network diagnostics
+            perform_network_diagnostics()
+        elif user_input == 'c':
+            # Perform security checks
+            perform_security_checks()
         elif user_input == 'q':
-            print("Thank you for using PCtricorder!")
+            logging.info("Thank you for using PCtricorder!")
             break  # Quit
         else:
             logging.info("Invalid input. Please choose a valid action.")
