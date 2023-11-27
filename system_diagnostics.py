@@ -33,6 +33,37 @@ file_handler.setFormatter(file_formatter)
 # Initialize the logging configuration with both handlers
 logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
 
+# Function to check battery health
+def check_battery_health():
+    try:
+        if platform.system() == "Windows":
+            # Add code to check battery health on Windows if needed
+            pass
+
+        elif platform.system() == "Darwin":
+            # Run a command to check battery health on macOS
+            result = subprocess.run(['system_profiler', 'SPPowerDataType'], capture_output=True, text=True, check=True)
+
+            # Extract battery health information from the result
+            battery_health_info = extract_battery_health_info(result.stdout)
+            logging.info(f"Battery Health: {battery_health_info}")
+
+        else:
+            logging.warning("Battery health check not supported on this operating system.")
+
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Error checking battery health: {e.stderr}")
+
+def extract_battery_health_info(report):
+    # Extract relevant information from the battery report
+    # Modify this based on the actual output format of the system_profiler command
+    cycle_count_line = [line for line in report.split('\n') if 'Cycle Count' in line]
+    if cycle_count_line:
+        cycle_count = int(cycle_count_line[0].split(':')[1].strip())
+        return f"Cycle Count: {cycle_count}"
+    else:
+        return "Battery health information not found in the report."
+
 # Function for historical data
 def log_historical_data(cpu_usage, memory_percent, timestamp):
     historical_data_file = 'historical_data.csv'
@@ -535,7 +566,7 @@ if __name__ == "__main__":
         log_historical_data(cpu_usage, memory_percent, timestamp)
 
         logging.info(display_hardware_info())
-        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
+        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, B: Battery check, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
 
 
 
@@ -572,6 +603,9 @@ if __name__ == "__main__":
         elif user_input == 'u':
             # Perform Update check
             check_updates()
+        elif user_input == 'b':
+            # Perform battery check
+            check_battery_health()    
         elif user_input == 'q':
             logging.info("Thank you for using PCtricorder!")
             break  # Quit
