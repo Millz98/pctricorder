@@ -32,6 +32,37 @@ file_handler.setFormatter(file_formatter)
 # Initialize the logging configuration with both handlers
 logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
 
+# Function for System recommendations
+def system_recommendations(cpu_usage, memory_percent):
+    recommendations = []
+
+    # CPU Recommendations
+    if cpu_usage > 90:
+        recommendations.append("High CPU usage detected. Consider upgrading your CPU.")
+    elif cpu_usage > 70:
+        recommendations.append("Moderate CPU usage. Monitor performance for potential upgrades.")
+
+    # Memory Recommendations
+    if memory_percent > 90:
+        recommendations.append("High memory usage detected. Consider adding more RAM.")
+    elif memory_percent > 70:
+        recommendations.append("Moderate memory usage. Monitor performance for potential upgrades.")
+
+    return recommendations
+
+# Example Usage
+cpu_usage = 85  # Replace with actual CPU usage percentage
+memory_percent = 80  # Replace with actual memory usage percentage
+
+recommendations = system_recommendations(cpu_usage, memory_percent)
+
+if recommendations:
+    logging.info("System Recommendations:")
+    for recommendation in recommendations:
+        logging.info("- " + recommendation)
+else:
+    logging.info("No specific recommendations at the moment.")
+
 # Function to start a scan
 def start_scan(drives_to_scan):
     problem_files = []  # Define the problem_files list
@@ -97,6 +128,8 @@ def perform_network_diagnostics():
         logging.warning("Ping Test: Network is unreachable. Check network configuration and firewall settings.")
     except Exception as e:
         logging.error(f"Unexpected error during network diagnostics: {str(e)}")
+
+        
 
 def perform_security_checks():
     try:
@@ -205,6 +238,8 @@ def scan_drive(drive, problem_files, scanned_files):
                     scan_file(file_path, problem_files, scanned_files)
 
         logging.info(f"Prepared drive: {drive}")
+
+
 
         # Perform the scan on the prepared drive
         scan_selected_drives([drive], problem_files, scanned_files)
@@ -451,9 +486,23 @@ def get_gpu_temperature_nvidia():
         return None
 
 if __name__ == "__main__":
+    # Display system recommendations at the beginning
+    logging.info("=== System Recommendations ===")
+    cpu_usage = psutil.cpu_percent(interval=1)
+    memory_percent = psutil.virtual_memory().percent
+
+    recommendations = system_recommendations(cpu_usage, memory_percent)
+
+    if recommendations:
+        for recommendation in recommendations:
+            logging.info("- " + recommendation)
+    else:
+        logging.info("No specific recommendations at the moment.")
+
     while True:
         logging.info(display_hardware_info())
         user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Windows Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
+
 
         if user_input == 'r':
             continue  # Refresh
@@ -494,4 +543,3 @@ if __name__ == "__main__":
         else:
             logging.info("Invalid input. Please choose a valid action.")
         time.sleep(1)
-
