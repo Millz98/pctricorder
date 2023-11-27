@@ -1,0 +1,15 @@
+2023-11-26 23:37:24 - INFO: CPU Usage: 4.0%
+2023-11-26 23:37:24 - INFO: Memory Usage: 78.9%
+2023-11-26 23:37:24 - INFO: CPU Temperature: 0.0°C
+2023-11-26 23:37:24 - INFO: Total RAM: 8.00 GB
+2023-11-26 23:37:24 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-26 23:37:24 - INFO: === Hardware Information ===
+System: Darwin 22.6.0 (64bit)
+CPU: arm

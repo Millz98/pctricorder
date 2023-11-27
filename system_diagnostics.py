@@ -65,15 +65,6 @@ def display_storage_info():
 # Function to perform network diagnostics
 def perform_network_diagnostics():
     try:
-        # Check network connectivity using ping
-        target_host = "www.google.ca"
-        response = subprocess.run(["ping", "-c", "4", target_host], capture_output=True, text=True, check=True)
-
-        if "4 packets transmitted, 4 received" in response.stdout:
-            logging.info("Ping Test: Network is reachable.")
-        else:
-            logging.warning("Ping Test: Network is unreachable.")
-
         # Measure network speed
         st = speedtest.Speedtest()
         download_speed = st.download() / 10**6  # in Mbps
@@ -81,6 +72,7 @@ def perform_network_diagnostics():
         logging.info(f"Speed Test: Download Speed: {download_speed:.2f} Mbps, Upload Speed: {upload_speed:.2f} Mbps")
 
         # DNS resolution check
+        target_host = "www.google.ca"
         try:
             socket.gethostbyname(target_host)
             logging.info("DNS Resolution: DNS is working properly.")
@@ -89,14 +81,14 @@ def perform_network_diagnostics():
 
         # Traceroute
         target_ip = socket.gethostbyname(target_host)
-        traceroute_output = subprocess.run(["traceroute", target_ip], capture_output=True, text=True)
-        logging.info(f"Traceroute:\n{traceroute_output.stdout}")    
+        if subprocess.run(["tracert", target_ip], shell=True).returncode == 0:
+            logging.info("Traceroute: Traceroute successful.")
+        else:
+            logging.warning("Traceroute: Unable to perform traceroute.")
 
-    except subprocess.CalledProcessError as e:
-        logging.error(f"Error during network diagnostics: {e.stderr}")
-        logging.warning("Ping Test: Network is unreachable. Check network configuration and firewall settings.")
     except Exception as e:
-        logging.error(f"Unexpected error during network diagnostics: {str(e)}")
+        logging.error(f"Error during network diagnostics: {str(e)}")
+
 
 def perform_security_checks():
     try:
