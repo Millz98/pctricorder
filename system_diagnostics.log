@@ -67,3 +67,36 @@ CPU: arm
 System: Darwin 23.1.0 (64bit)
 CPU: arm
 2023-11-27 01:12:22 - INFO: Thank you for using PCtricorder!
+2023-11-27 01:14:41 - INFO: CPU Usage: 2.0%
+2023-11-27 01:14:41 - INFO: Memory Usage: 67.9%
+2023-11-27 01:14:41 - INFO: CPU Temperature: 0.0°C
+2023-11-27 01:14:41 - INFO: Total RAM: 8.00 GB
+2023-11-27 01:14:41 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-27 01:14:41 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-27 01:14:44 - INFO: Performing security checks...
+2023-11-27 01:14:44 - INFO: Security checks completed.
+2023-11-27 01:14:44 - ERROR: Error performing security checks: cannot access local variable 'update_command' where it is not associated with a value
+2023-11-27 01:14:46 - INFO: CPU Usage: 1.7%
+2023-11-27 01:14:46 - INFO: Memory Usage: 67.6%
+2023-11-27 01:14:46 - INFO: CPU Temperature: 0.0°C
+2023-11-27 01:14:46 - INFO: Total RAM: 8.00 GB
+2023-11-27 01:14:46 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-27 01:14:46 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
