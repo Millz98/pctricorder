@@ -453,7 +453,7 @@ def get_gpu_temperature_nvidia():
 if __name__ == "__main__":
     while True:
         logging.info(display_hardware_info())
-        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Perform Security Checks, U: Check for MacOS Updates, Q: Quit): ").lower()
+        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Perform Security Checks, U: Check for MacOS Updates, Q: Quit: ").lower()
 
         if user_input == 'r':
             continue  # Refresh

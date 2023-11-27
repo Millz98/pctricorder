@@ -51,3 +51,19 @@ CPU: arm
 System: Darwin 23.1.0 (64bit)
 CPU: arm
 2023-11-27 01:08:34 - INFO: Thank you for using PCtricorder!
+2023-11-27 01:12:14 - INFO: CPU Usage: 1.1%
+2023-11-27 01:12:14 - INFO: Memory Usage: 68.2%
+2023-11-27 01:12:14 - INFO: CPU Temperature: 0.0°C
+2023-11-27 01:12:14 - INFO: Total RAM: 8.00 GB
+2023-11-27 01:12:14 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-27 01:12:14 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-27 01:12:22 - INFO: Thank you for using PCtricorder!
