@@ -133,7 +133,26 @@ def scan_for_malware():
             logging.info(f"Malware Scan Result: {result.stdout.strip()}")
 
         except subprocess.CalledProcessError as e:
-            logging.error(f"Error scanning for malware: {e.stderr}")        
+            logging.error(f"Error scanning for malware: {e.stderr}")  
+
+#Function to check for software updates of the OS this is running on
+def check_updates():
+    try:
+        system = platform.system()
+
+        if system == "Darwin":  # macOS
+            logging.info("Checking for macOS updates...")
+            subprocess.run(["softwareupdate", "-l"])
+
+        elif system == "Windows":
+            logging.info("Checking for Windows updates...")
+            subprocess.run(["choco", "upgrade", "all", "-y"])
+
+        else:
+            logging.warning("Update checks not supported on this operating system.")
+
+    except Exception as e:
+        logging.error(f"Error checking for updates: {str(e)}")                  
 
 # Function to scan a single drive
 def scan_drive(drive, problem_files, scanned_files):
@@ -395,7 +414,7 @@ def get_gpu_temperature_nvidia():
 if __name__ == "__main__":
     while True:
         logging.info(display_hardware_info())
-        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Perform Security Checks, Q: Quit): ").lower()
+        user_input = input("Choose an action (R: Refresh, S: Scan Files, D: Display Storage Info, N: Perform Network Diagnostics, C: Perform Security Checks, U: Check for OS Updates, Q: Quit): ").lower()
 
         if user_input == 'r':
             continue  # Refresh
@@ -427,6 +446,9 @@ if __name__ == "__main__":
         elif user_input == 'c':
             # Perform security checks
             perform_security_checks()
+        elif user_input == 'u':
+            # Perform Update check
+            check_updates()
         elif user_input == 'q':
             logging.info("Thank you for using PCtricorder!")
             break  # Quit
