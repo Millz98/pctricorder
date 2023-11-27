@@ -1,3 +1,53 @@
 version https://git-lfs.github.com/spec/v1
 oid sha256:cd3cc9a2ae20b5d3107a4ded90945b90b717e220f46e60ce403f9dab4d38b0a8
 size 37386
+2023-11-27 01:07:56 - INFO: CPU Usage: 24.5%
+2023-11-27 01:07:56 - INFO: Memory Usage: 68.0%
+2023-11-27 01:07:56 - INFO: CPU Temperature: 0.0°C
+2023-11-27 01:07:56 - INFO: Total RAM: 8.00 GB
+2023-11-27 01:07:57 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-27 01:07:57 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-27 01:07:58 - INFO: Performing security checks...
+2023-11-27 01:07:58 - INFO: Security checks completed.
+2023-11-27 01:07:58 - ERROR: Error performing security checks: cannot access local variable 'update_command' where it is not associated with a value
+2023-11-27 01:08:00 - INFO: CPU Usage: 1.4%
+2023-11-27 01:08:00 - INFO: Memory Usage: 68.0%
+2023-11-27 01:08:00 - INFO: CPU Temperature: 0.0°C
+2023-11-27 01:08:00 - INFO: Total RAM: 8.00 GB
+2023-11-27 01:08:01 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-27 01:08:01 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-27 01:08:18 - INFO: Checking for macOS updates...
+2023-11-27 01:08:27 - INFO: CPU Usage: 1.1%
+2023-11-27 01:08:27 - INFO: Memory Usage: 68.0%
+2023-11-27 01:08:27 - INFO: CPU Temperature: 0.0°C
+2023-11-27 01:08:27 - INFO: Total RAM: 8.00 GB
+2023-11-27 01:08:27 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-27 01:08:27 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-27 01:08:34 - INFO: Thank you for using PCtricorder!
