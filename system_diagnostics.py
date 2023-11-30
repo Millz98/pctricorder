@@ -16,7 +16,26 @@ import patoolib
 from py7zr import SevenZipFile 
 
 
+# Define these variables at the module level
+file_extensions_to_scan = ('.zip', '.rar', '.7z')
+problem_files = []  # Define the problem_files list
+scanned_files = []  # Define the scanned_files list
+global_pbar = None  # Define the global progress bar
 
+# Create a console handler with a custom log format
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(logging.Formatter('=== Hardware Information ===\nSystem: %(message)s'))
+
+# Create a file handler to log to a file with timestamps
+file_handler = logging.FileHandler('system_diagnostics.log')
+file_formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+file_handler.setFormatter(file_formatter)
+
+# Initialize the logging configuration with both handlers
+logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
+
+
+# Function for scanning files within drives
 def scan_files(self):
         available_drives = display_available_drives()
         if available_drives:
@@ -35,25 +54,6 @@ def scan_files(self):
                         for problem_file in problem_files:
                             logging.info(problem_file)
 
-           
-
-# Define these variables at the module level
-file_extensions_to_scan = ('.zip', '.rar', '.7z')
-problem_files = []  # Define the problem_files list
-scanned_files = []  # Define the scanned_files list
-global_pbar = None  # Define the global progress bar
-
-# Create a console handler with a custom log format
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(logging.Formatter('=== Hardware Information ===\nSystem: %(message)s'))
-
-# Create a file handler to log to a file with timestamps
-file_handler = logging.FileHandler('system_diagnostics.log')
-file_formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-file_handler.setFormatter(file_formatter)
-
-# Initialize the logging configuration with both handlers
-logging.basicConfig(level=logging.INFO, handlers=[console_handler, file_handler])
 
 # Function for battery check
 def check_battery_health():
