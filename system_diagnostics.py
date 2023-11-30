@@ -14,6 +14,108 @@ import csv
 import zipfile
 import patoolib
 from py7zr import SevenZipFile 
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QTextBrowser, QVBoxLayout, QMessageBox
+
+class PCtricorderApp(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.init_ui()
+
+    def init_ui(self):
+        # Create widgets
+        self.label = QLabel("Welcome to PCtricorder!", self)
+        font = self.label.font()
+        font.setPointSize(font.pointSize() * 2)
+        self.label.setFont(font)
+
+        self.text_browser = QTextBrowser(self)
+
+        # Create buttons for each functionality
+        self.button_check_system = QPushButton("Check System", self)
+        self.button_check_system.clicked.connect(self.check_system)
+
+        self.button_scan_files = QPushButton("Scan Files", self)
+        self.button_scan_files.clicked.connect(self.scan_files)
+
+        self.button_display_storage_info = QPushButton("Display Storage Info", self)
+        self.button_display_storage_info.clicked.connect(self.display_storage_info)
+
+        self.button_network_diagnostics = QPushButton("Perform Network Diagnostics", self)
+        self.button_network_diagnostics.clicked.connect(self.perform_network_diagnostics)
+
+        self.button_security_checks = QPushButton("Perform Security Checks", self)
+        self.button_security_checks.clicked.connect(self.perform_security_checks)
+
+        self.button_check_updates = QPushButton("Check for Updates", self)
+        self.button_check_updates.clicked.connect(self.check_updates)
+
+        self.button_check_battery = QPushButton("Check Battery Health", self)
+        self.button_check_battery.clicked.connect(self.check_battery_health)
+
+        self.button_exit = QPushButton("Exit", self)
+        self.button_exit.clicked.connect(self.close)
+
+        # Create layout
+        layout = QVBoxLayout()
+        layout.addWidget(self.label)
+        layout.addWidget(self.text_browser)
+        layout.addWidget(self.button_check_system)
+        layout.addWidget(self.button_scan_files)
+        layout.addWidget(self.button_display_storage_info)
+        layout.addWidget(self.button_network_diagnostics)
+        layout.addWidget(self.button_security_checks)
+        layout.addWidget(self.button_check_updates)
+        layout.addWidget(self.button_check_battery)
+        layout.addWidget(self.button_exit)
+
+        # Set layout
+        self.setLayout(layout)
+
+        # Set window properties
+        self.setWindowTitle("PCtricorder - System Diagnostics")
+        self.setGeometry(100, 100, 800, 600)
+
+    def check_system(self):
+        QMessageBox.information(self, "System Check", "Your system is in good shape!")
+
+    def scan_files(self):
+        available_drives = display_available_drives()
+        if available_drives:
+            drive_choice = input("Select drives to scan (e.g., 1,2,3): ").split(',')
+            drives_to_scan = [available_drives[int(choice) - 1][0] for choice in drive_choice if 1 <= int(choice) <= len(available_drives)]
+            if drives_to_scan:
+                with tqdm(total=sum(len(os.listdir(drive)) for drive in drives_to_scan if os.path.isdir(drive))) as pbar:
+                    problem_files = []  # Reset problem_files
+                    scanned_files = []  # Reset scanned_files
+                    asyncio.run(scan_selected_drives(drives_to_scan, file_extensions_to_scan, problem_files, scanned_files))
+
+                    if not problem_files:
+                        logging.info("No problems detected in files.")
+                    else:
+                        logging.info(f"Problems found in {len(problem_files)} files.")
+                        for problem_file in problem_files:
+                            logging.info(problem_file)
+
+    def display_storage_info(self):
+            self.text_browser.clear()
+            self.text_browser.append(display_storage_info())
+
+    def perform_network_diagnostics(self):
+            self.text_browser.clear()
+            perform_network_diagnostics()
+
+    def perform_security_checks(self):
+            self.text_browser.clear()
+            perform_security_checks()
+
+    def check_updates(self):
+            self.text_browser.clear()
+            check_updates()
+
+    def check_battery_health(self):
+            self.text_browser.clear()
+            check_battery_health()        
 
 # Define these variables at the module level
 file_extensions_to_scan = ('.zip', '.rar', '.7z')
@@ -537,6 +639,10 @@ def get_gpu_temperature_nvidia():
 
 # the main loop
 if __name__ == "__main__":
+    app = QApplication([])
+    window = PCtricorderApp()
+    window.show()
+    app.exec_()
     # Display system recommendations at the beginning
     logging.info("=== System Recommendations ===")
     cpu_usage = psutil.cpu_percent(interval=1)

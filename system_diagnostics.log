@@ -1,0 +1,51 @@
+2023-11-29 23:05:01 - INFO: System Recommendations:
+2023-11-29 23:05:01 - INFO: - Moderate CPU usage. Monitor performance for potential upgrades.
+2023-11-29 23:05:01 - INFO: - Moderate memory usage. Monitor performance for potential upgrades.
+2023-11-29 23:07:14 - INFO: System Recommendations:
+2023-11-29 23:07:14 - INFO: - Moderate CPU usage. Monitor performance for potential upgrades.
+2023-11-29 23:07:14 - INFO: - Moderate memory usage. Monitor performance for potential upgrades.
+2023-11-29 23:07:26 - INFO: === System Recommendations ===
+2023-11-29 23:07:28 - INFO: No specific recommendations at the moment.
+2023-11-29 23:07:29 - INFO: CPU Usage: 5.4%
+2023-11-29 23:07:29 - INFO: Memory Usage: 69.0%
+2023-11-29 23:07:29 - INFO: CPU Temperature: 0.0°C
+2023-11-29 23:07:29 - INFO: Total RAM: 8.00 GB
+2023-11-29 23:07:30 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-29 23:07:30 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-29 23:07:43 - INFO: Thank you for using PCtricorder!
+2023-11-29 23:15:34 - INFO: System Recommendations:
+2023-11-29 23:15:34 - INFO: - Moderate CPU usage. Monitor performance for potential upgrades.
+2023-11-29 23:15:34 - INFO: - Moderate memory usage. Monitor performance for potential upgrades.
+2023-11-29 23:19:53 - INFO: System Recommendations:
+2023-11-29 23:19:53 - INFO: - Moderate CPU usage. Monitor performance for potential upgrades.
+2023-11-29 23:19:53 - INFO: - Moderate memory usage. Monitor performance for potential upgrades.
+2023-11-29 23:22:24 - INFO: System Recommendations:
+2023-11-29 23:22:24 - INFO: - Moderate CPU usage. Monitor performance for potential upgrades.
+2023-11-29 23:22:24 - INFO: - Moderate memory usage. Monitor performance for potential upgrades.
+2023-11-29 23:23:12 - INFO: === System Recommendations ===
+2023-11-29 23:23:14 - INFO: - Moderate memory usage. Monitor performance for potential upgrades.
+2023-11-29 23:23:15 - INFO: CPU Usage: 8.2%
+2023-11-29 23:23:15 - INFO: Memory Usage: 70.6%
+2023-11-29 23:23:15 - INFO: CPU Temperature: 0.0°C
+2023-11-29 23:23:15 - INFO: Total RAM: 8.00 GB
+2023-11-29 23:23:15 - INFO: Active GPU: Apple M1:
+
+      Chipset Model: Apple M1
+      Type: GPU
+      Bus: Built-In
+      Total Number of Cores: 8
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 3
+2023-11-29 23:23:15 - INFO: === Hardware Information ===
+System: Darwin 23.1.0 (64bit)
+CPU: arm
+2023-11-29 23:23:20 - INFO: Thank you for using PCtricorder!
